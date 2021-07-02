@@ -613,7 +613,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		Coupon.click();
 		Thread.sleep(3000);
-		 WebElement Add_Coupon= driver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div[3]/div[1]/div[1]/form[2]/div[2]/div[2]/input"));
+		 WebElement Add_Coupon= driver.findElement(By.cssSelector("#checkbox-input"));
 		Thread.sleep(3000);
 		Add_Coupon.sendKeys("5OFF");
 		Thread.sleep(3000);
@@ -622,7 +622,7 @@ public class Paypal_Checkout extends SetupClass {
 		Apply_Coupon.click();
 		Thread.sleep(3000);
 		
-		WebElement Value_after_coupon= driver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div[3]/div[2]/div/div/table/tbody/tr[4]/td[2]/strong/em"));
+		WebElement Value_after_coupon= driver.findElement(By.cssSelector("body > div.afterBody.checkout-wrapper.main-wrapper.no-left-menu > div.main_wrapper > div > div.checkout-inner-wrapper > div.checkout-box-wrapper.checkout-order > div > div > table > tbody > tr:nth-child(4) > td:nth-child(2) > strong > em"));
 		
 	      String expected = "$2849.99";
               String actual = Value_after_coupon.getText();
