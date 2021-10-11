@@ -657,10 +657,11 @@ public class Stripe_Checkout extends SetupClass {
 				  
 				  driver.switchTo().window(currentWindow);
 		
+		
 	  
 		
 		
-//		driver.switchTo().alert().accept();
+                    driver.switchTo().alert().accept();
 		//driver.get("https://www.slidegeeks.com/component/pago/checkout");
 		//Thread.sleep(2000);
 		
