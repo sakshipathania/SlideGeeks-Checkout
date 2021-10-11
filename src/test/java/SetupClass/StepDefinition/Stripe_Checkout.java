@@ -583,7 +583,8 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(1400);
 		// select 2co option
 		//WebElement co_btn  =  wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-checkout-billing-payment-form > div > div:nth-child(1) > label")));
-		WebElement cp_btn  = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]"));
+		WebElement cp_btn  = driver.findElement(By.xpath(" /html[1]/body[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]"));
+			
 			Thread.sleep(2000);
 			 //Thread.sleep(2000);
 	         cp_btn.click();
@@ -609,11 +610,26 @@ public class Stripe_Checkout extends SetupClass {
 
 	@Then("^CO page appears and user navigates back to my account (\\d+)CO$")
 	public void CO_page_appears_and_user_navigates_back_to_my_account_CO(int arg1) throws Throwable {
-	  String stripe_page_title=driver.getTitle();
+		
+		String currentWindow = driver.getWindowHandle();
+		  String popupWindowHandle = null;
+		   
+		  // Switch To Popup Window
+		  
+		  for(String handle : driver.getWindowHandles()){
+		   if(!handle.equals(currentWindow)){
+		    
+		    popupWindowHandle = handle;
+		     driver.switchTo().window(popupWindowHandle);
+			   driver.manage().window().maximize();
+		   }
+		  }	  
+		// page title
+		String stripe_page_title=driver.getTitle();
 		Thread.sleep(3000);
 	    System.out.println("Title of the Page is --> "+stripe_page_title);
 	    
-	    String page_title="https://checkout.stripe.com/";
+	    String page_title="Stripe Checkout";
 	    
 	    if(page_title.equalsIgnoreCase(stripe_page_title))
 	    {
@@ -625,8 +641,9 @@ public class Stripe_Checkout extends SetupClass {
 	    	System.out.println("user is on the wrong page");
 	    	log.info("USER IS ON THE WRONG PAGE");
 	    }	
-		
-		Thread.sleep(3000);
+		    
+		 // enter email address
+			Thread.sleep(3000);
 		 WebElement Stripe_email = driver.findElement(By.cssSelector("#email"));
 		Thread.sleep(2000);
 		 Stripe_email.sendKeys("slidetech.qa@gmail.com");
@@ -635,7 +652,15 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(2000);
 			Stripe_back.click();
 		Thread.sleep(5000);
-		driver.switchTo().alert().accept();
+
+				 // Switch To Default Window
+				  
+				  driver.switchTo().window(currentWindow);
+		
+	  
+		
+		
+//		driver.switchTo().alert().accept();
 		//driver.get("https://www.slidegeeks.com/component/pago/checkout");
 		//Thread.sleep(2000);
 		
