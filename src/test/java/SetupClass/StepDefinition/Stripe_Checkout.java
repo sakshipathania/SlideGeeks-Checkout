@@ -629,7 +629,7 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(3000);
 	    System.out.println("Title of the Page is --> "+stripe_page_title);
 	    
-	    String page_title="Stripe Checkout";
+	    String page_title="Slideteam PTE LTD";
 	    
 	    if(page_title.equalsIgnoreCase(stripe_page_title))
 	    {
