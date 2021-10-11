@@ -62,10 +62,10 @@ public class Paypal_Checkout extends SetupClass {
 		driver.get("https://www.slidegeeks.com/register");
 		Thread.sleep(3000);
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.name("jform[name1]")));
-		 Thread.sleep(3000);
+		// Thread.sleep(3000);
 		name.clear();
 		 name.sendKeys("Automated Program");
-		 Thread.sleep(3000);
+		// Thread.sleep(3000);
 	   
 	
 		// Generate Random Email Address
@@ -90,32 +90,32 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(2000);
 		
 		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.name("jform[email1]")));
-		 Thread.sleep(3000);
+		// Thread.sleep(3000);
 		 new_email.sendKeys(full_email);
 		 Thread.sleep(3000);
 		
 	
 		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_password1")));
-		 Thread.sleep(3000);
+		// Thread.sleep(3000);
 		password.sendKeys("Geeks@123");
 		 Thread.sleep(3000);
 		 
 		 WebElement confirm_passwoed = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_password2")));
-		 Thread.sleep(3000);
+		// Thread.sleep(3000);
 		confirm_passwoed.sendKeys("Geeks@123");
 		 Thread.sleep(3000);
 	    
 	
 		WebElement captcha = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#captchtext")));
-		 Thread.sleep(3000);
+		 //Thread.sleep(3000);
 		captcha.sendKeys("Y3Tt6bfwI");
 		 Thread.sleep(3000);
 	    
 
 		WebElement register_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".pg-register-button-new")));
-		 Thread.sleep(3000);
+		 //Thread.sleep(3000);
 		register_btn.click();
-		 Thread.sleep(5000);
+		 //Thread.sleep(5000);
 	}
 	
     @Then("^user is redirected to pricing page and check the text1 PP1$")
@@ -137,7 +137,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 		//wait.implictywait(driver);
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		//wait.implictywait(driver);
 		
 	}
@@ -148,7 +148,7 @@ public class Paypal_Checkout extends SetupClass {
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		       Thread.sleep(4000);
 		
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String actualTitle = "$49.99";
 		Thread.sleep(1000);
 		//wait.implictywait(driver);
@@ -162,7 +162,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 		//wait.implictywait(driver);
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	}
 	
 	@Then("^user is redirected to pricing page and check the text3 PP3$")
@@ -171,7 +171,7 @@ public class Paypal_Checkout extends SetupClass {
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		       Thread.sleep(4000);
 		
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String actualTitle = "Semi Annual";
 		Thread.sleep(1000);
 		//wait.implictywait(driver);
@@ -194,7 +194,7 @@ public class Paypal_Checkout extends SetupClass {
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		       Thread.sleep(4000);
 		
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String actualTitle = "$149.99";
 		Thread.sleep(1000);
 		//wait.implictywait(driver);
@@ -286,7 +286,7 @@ public class Paypal_Checkout extends SetupClass {
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		       Thread.sleep(4000);
 		
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String actualTitle = "$299.99";
 		Thread.sleep(1000);
 		//wait.implictywait(driver);
@@ -337,7 +337,7 @@ public class Paypal_Checkout extends SetupClass {
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		       Thread.sleep(4000);
 		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[1]/div/div/button[2]")));
-				Thread.sleep(2000);
+		//		Thread.sleep(2000);
 		Business_Team.click();
 		Thread.sleep(3000);
 	
@@ -363,7 +363,7 @@ public class Paypal_Checkout extends SetupClass {
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		       Thread.sleep(4000);
 		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[1]/div/div/button[2]")));
-				Thread.sleep(2000);
+		//		Thread.sleep(2000);
 		Business_Team.click();
 		Thread.sleep(3000);
 	
@@ -379,7 +379,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 		//wait.implictywait(driver);
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		
 	}
 	
@@ -415,7 +415,7 @@ public class Paypal_Checkout extends SetupClass {
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		       Thread.sleep(4000);
 		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[1]/div/div/button[2]")));
-				Thread.sleep(2000);
+		//		Thread.sleep(2000);
 		Business_Team.click();
 		Thread.sleep(3000);
 	
