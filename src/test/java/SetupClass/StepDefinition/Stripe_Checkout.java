@@ -586,7 +586,7 @@ public class Stripe_Checkout extends SetupClass {
 		WebElement cp_btn  = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]"));
 			Thread.sleep(2000);
 			 //Thread.sleep(2000);
-	         co_btn.click();
+	         cp_btn.click();
 		Thread.sleep(5000);
 	     } catch( NoSuchElementException popup) { 
 	     }
