@@ -658,32 +658,48 @@ public class Paypal_Checkout extends SetupClass {
 	public void paypal_popup_appears_and_user_navigates_back_to_my_account_pp() throws Throwable {
 	         
 		// page title
-		
-		 String pp_page_title=driver.getTitle();
-		 System.out.println("Title of the Page is --> "+pp_page_title);
-		
-		Assert.assertTrue("title does not matched",
-						driver.getTitle().contains("Slideteam PTE LTD"));
-		    
+		String mainWindow = driver.getWindowHandle();
 
-		Thread.sleep(1000);
-		
-	        //verify text message on paypal page 
-		String verifyText1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//span[@class='Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500']")))
-				.getText();
-		System.out.println("verifyText1 = " + verifyText1);
-		
-		Assert.assertTrue("Your are not on paypal page",
-				verifyText1.contentEquals("Subscribe to Annual Company-Wide Unlimited-User License (plus 25 Custom Designed slides worth dollar 375)"));
-		
-		//verify price
-		String verifyPrice = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='mr2 flex-item width-fixed']")))
-				.getText();
-		System.out.println("verifyPrice = " + verifyPrice);
+		System.out.println("user is on mainWindow ------" + mainWindow);
+		// It returns no. of windows opened by WebDriver and will return Set of Strings
+		Thread.sleep(4000);
+		Set<String> set = driver.getWindowHandles();
 
-		Assert.assertTrue("Your are not on paypal page", verifyPrice.contentEquals("$2,999.99"));
+		// Using Iterator to iterate with in windows
+		Iterator<String> itr = set.iterator();
+		while (itr.hasNext()) {
+			String childWindow = itr.next();
+			// Compare whether the main windows is not equal to child window. If not equal,
+			// we will close.
+
+			System.out.println("set size = " + set.size());
+			if (!mainWindow.equals(childWindow)) {
+				System.out.println("user is on mainWindow ------" + childWindow);
+				driver.switchTo().window(childWindow);
+				System.out.println("Title = " + driver.getTitle());
+
+				Assert.assertTrue("title does not matched",
+						driver.getTitle().contains("Log in to your PayPal account"));
+
+				// enter data in email textfield and click on next button
+
+				Thread.sleep(1000);
+
+				WebElement email = wait
+						.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+				email.clear();
+				email.sendKeys("nisha.dhiman@slidetech.in");
+
+				Thread.sleep(1000);
+				WebElement next = wait
+						.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@id='btnNext']")));
+				next.click();
+				
+				}
+		}
+		// This is to switch to the main window
+		driver.switchTo().window(mainWindow);
+
 		
 		 /* String pp_page_title=driver.getTitle();
 			Thread.sleep(3000);
