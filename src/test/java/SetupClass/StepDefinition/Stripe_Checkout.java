@@ -628,7 +628,7 @@ public class Stripe_Checkout extends SetupClass {
 		System.out.println("verifyText1 = " + verifyText1);
 		
 		Assert.assertTrue("Your are not on paypal page",
-				verifyText1.contentEquals("Subscribe to Annual Company-Wide Unlimited-User License (plus 25 Custom Designed slides worth dollar 375)"));
+				verifyText1.contentEquals("Subscribe to Semi Annual"));
 		
 		//verify price
 		String verifyPrice = wait
@@ -636,7 +636,7 @@ public class Stripe_Checkout extends SetupClass {
 				.getText();
 		System.out.println("verifyPrice = " + verifyPrice);
 
-		Assert.assertTrue("Your are not on paypal page", verifyPrice.contentEquals("$2,999.99"));
+		Assert.assertTrue("Your are not on paypal page", verifyPrice.contentEquals("$149.99"));
 		
 		
 	  
