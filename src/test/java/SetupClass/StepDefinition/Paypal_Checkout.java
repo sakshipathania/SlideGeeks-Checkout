@@ -17,6 +17,8 @@ import org.openqa.selenium.Keys;
 import SetupClass.SetupClass;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import java.util.Iterator;
+import java.util.Set;
 
 public class Paypal_Checkout extends SetupClass {
 	
