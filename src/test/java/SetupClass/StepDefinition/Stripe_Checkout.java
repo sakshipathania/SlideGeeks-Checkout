@@ -741,8 +741,8 @@ public class Stripe_Checkout extends SetupClass {
 	@Then("^user signout the account (\\d+)CO$")
 	public void user_signout_the_account_CO(int arg1) throws Throwable {
 		Thread.sleep(3000);
-	  //  driver.get("https://www.slidegeeks.com/component/pago/checkout");
-		//Thread.sleep(2000);
+	        driver.get("https://www.slidegeeks.com/component/pago/checkout");
+		Thread.sleep(2000);
 	WebElement Account = driver.findElement(By.xpath("/html/body/div[1]/header/div/div/nav/div/div[2]/div[2]/div[2]/div/div[2]/ul/li[1]/a"));
 		Thread.sleep(3000);
 		Account.click();
