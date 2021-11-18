@@ -581,9 +581,9 @@ public class Stripe_Checkout extends SetupClass {
 	    
 		 try {
 		Thread.sleep(1400);
-		// select 2co option
+		// select paypal option  
 		//WebElement co_btn  =  wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-checkout-billing-payment-form > div > div:nth-child(1) > label")));
-		WebElement cp_btn  = driver.findElement(By.xpath(" /html[1]/body[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]"));
+		WebElement cp_btn  = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]"));
 			
 			Thread.sleep(2000);
 			 //Thread.sleep(2000);
@@ -611,51 +611,32 @@ public class Stripe_Checkout extends SetupClass {
 	@Then("^CO page appears and user navigates back to my account (\\d+)CO$")
 	public void CO_page_appears_and_user_navigates_back_to_my_account_CO(int arg1) throws Throwable {
 		
-		String currentWindow = driver.getWindowHandle();
-		  String popupWindowHandle = null;
-		   
-		  // Switch To Popup Window
-		  
-		  for(String handle : driver.getWindowHandles()){
-		   if(!handle.equals(currentWindow)){
+		Thread.sleep(1000);
+		 String pp_page_title=driver.getTitle();
+		 System.out.println("Title of the Page is --> "+pp_page_title);
+		
+		Assert.assertTrue("title does not matched",
+						driver.getTitle().contains("Slideteam PTE LTD"));
 		    
-		    popupWindowHandle = handle;
-		     driver.switchTo().window(popupWindowHandle);
-			   driver.manage().window().maximize();
-		   }
-		  }	  
-		// page title
-		String stripe_page_title=driver.getTitle();
-		Thread.sleep(3000);
-	    System.out.println("Title of the Page is --> "+stripe_page_title);
-	    
-	    String page_title="Slideteam PTE LTD";
-	    
-	    if(page_title.equalsIgnoreCase(stripe_page_title))
-	    {
-	    	System.out.println(" user is on the Stripe page");
-	    	log.info("USER IS ON THE STRIPE PAGE");
-	    }
-	    else
-	    {
-	    	System.out.println("user is on the wrong page");
-	    	log.info("USER IS ON THE WRONG PAGE");
-	    }	
-		    
-		 // enter email address
-			Thread.sleep(3000);
-		 WebElement Stripe_email = driver.findElement(By.cssSelector("#email"));
-		Thread.sleep(2000);
-		 Stripe_email.sendKeys("slidetech.qa@gmail.com");
-		Thread.sleep(2000);
-		 WebElement Stripe_back = driver.findElement(By.cssSelector("#root > div > div > div.App-Overview > header > div > div > a > div > div > div.Header-backArrowContainer > svg"));
-		Thread.sleep(2000);
-			Stripe_back.click();
-		Thread.sleep(5000);
 
-				 // Switch To Default Window
-				 driver.switchTo().alert().accept();  
-				  driver.switchTo().window(currentWindow);
+		Thread.sleep(1000);
+		
+	        //verify text message on paypal page 
+		String verifyText1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//span[@class='Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500']")))
+				.getText();
+		System.out.println("verifyText1 = " + verifyText1);
+		
+		Assert.assertTrue("Your are not on paypal page",
+				verifyText1.contentEquals("Subscribe to Annual Company-Wide Unlimited-User License (plus 25 Custom Designed slides worth dollar 375)"));
+		
+		//verify price
+		String verifyPrice = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='mr2 flex-item width-fixed']")))
+				.getText();
+		System.out.println("verifyPrice = " + verifyPrice);
+
+		Assert.assertTrue("Your are not on paypal page", verifyPrice.contentEquals("$2,999.99"));
 		
 		
 	  
