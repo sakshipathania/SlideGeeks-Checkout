@@ -616,7 +616,7 @@ public class Stripe_Checkout extends SetupClass {
 		 System.out.println("Title of the Page is --> "+pp_page_title);
 		
 		Assert.assertTrue("title does not matched",
-						driver.getTitle().contains("Slideteam PTE LTD"));
+						driver.getTitle().contains("SlideTeam Geeks Inc"));
 		    
 
 		Thread.sleep(1000);
