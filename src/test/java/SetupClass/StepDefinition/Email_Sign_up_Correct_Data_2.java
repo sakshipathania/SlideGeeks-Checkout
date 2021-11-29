@@ -144,8 +144,9 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(3000);
 	    System.out.println("Title of the Page is --> "+stripe_page_title);
 	    
-	    String page_title="https://checkout.stripe.com/";
-	    
+	   // String page_title="https://checkout.stripe.com/";
+		String page_title = "SlideTeam Geeks Inc";
+	   
 	    if(page_title.equalsIgnoreCase(stripe_page_title))
 	    {
 	    	System.out.println(" user is on the Stripe page");
