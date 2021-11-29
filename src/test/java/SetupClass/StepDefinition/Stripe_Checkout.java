@@ -281,9 +281,8 @@ public class Stripe_Checkout extends SetupClass {
 		      // Thread.sleep(4000);
 		
 		//Thread.sleep(3000);
-		//String actualTitle = "Annual + Custom Design";
-		//Thread.sleep(1000);
-		//wait.implictywait(driver);
+		String actualTitle = "Annual + Custom Design";
+		Thread.sleep(1000);
 		String expectedTitle = "Annual + Custom Design";
 		Thread.sleep(1000);
 		//wait.implictywait(driver);
