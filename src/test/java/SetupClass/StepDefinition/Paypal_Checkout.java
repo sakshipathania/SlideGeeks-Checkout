@@ -163,7 +163,7 @@ public class Paypal_Checkout extends SetupClass {
 		WebElement price = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"//div[@id='Individual']//em[contains(text(),'$49.99')]")));   
 		
-		js.executeScript("arguments[0].scrollIntoView();",monthlyPrice);
+		js.executeScript("arguments[0].scrollIntoView();",price);
 		String monthlyPrice = price.getText();
 		
 		System.out.println("monthlyPrice  = " + monthlyPrice );
