@@ -208,10 +208,12 @@ public class Coupon extends SetupClass {
     
 		WebElement Value_after_coupon= driver.findElement(By.cssSelector("body > div.afterBody.checkout-wrapper.main-wrapper.no-left-menu > div.main_wrapper > div > div.checkout-inner-wrapper > div.checkout-box-wrapper.checkout-order > div > div > table > tbody > tr:nth-child(4) > td:nth-child(2) > strong > em"));
 		
-	      String expected = "$2849.99";
+	      String expected = "47.49";
               String actual = Value_after_coupon.getText();
               System.out.println(actual);
-
+		
+              Assert.assertTrue("Price does not matched", actual.contentEquals("47.49"));
+		
               if(expected.equals(actual)){
               System.out.println("Coupon applied Successfully");
               }
