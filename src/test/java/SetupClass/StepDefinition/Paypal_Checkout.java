@@ -894,8 +894,8 @@ public class Paypal_Checkout extends SetupClass {
 	@Then("^user Signout account PP$")
 	public void user_Signout_account_PP() throws Throwable {
 		Thread.sleep(3000);
-	  //  driver.get("https://www.slidegeeks.com/component/pago/checkout");
-		//Thread.sleep(2000);
+	  driver.get("https://www.slidegeeks.com/component/pago/checkout");
+		Thread.sleep(2000);
 		
 		
 		 //  driver.get("https://www.slidegeeks.com/component/pago/checkout");
