@@ -34,43 +34,28 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(1000);
 		
 		try {
-			WebElement iframe = driver.findElement(By.id("livechat-full-view"));
-			if(iframe.isDisplayed()) {
-				driver.switchTo().frame(iframe);   
-				 Actions act = new Actions(driver);
-				 act.moveToElement(driver.findElement(By.cssSelector("#title .icon-minimize"))).build().perform();
-				 Thread.sleep(2000);
-					WebElement chat1=driver.findElement(By.cssSelector("#title .icon-minimize"));
-					 Thread.sleep(1000);
-						chat1.click();
-						 Thread.sleep(1000);
-						 driver.switchTo().defaultContent();
-						 Thread.sleep(1000);
-						 driver.switchTo().parentFrame();
-					 Thread.sleep(1000);
+			WebElement logout = driver.findElement(By.xpath("//a[@href ='/logout']"));
+			if (logout.isEnabled()) {
+				logout.click();
+				Thread.sleep(1000);
+				driver.navigate().refresh();
+				Thread.sleep(1000);
 			}
-			else {
-				
+		} catch (NoSuchElementException Ext) {
 
-			System.out.println("chat window does not open");
-			}
 		}
-				catch(NoSuchElementException NCP) {
-					
-				}
 	    
-		Thread.sleep(3000);
-		driver.get("https://www.slidegeeks.com/register");
-		Thread.sleep(3000);
-		/*WebElement login_signup_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".t3-navbar > ul:nth-child(1) > li:nth-child(10) > a:nth-child(1)")));
-		 Thread.sleep(3000);
+		Thread.sleep(1000);
+		//driver.get("https://www.slidegeeks.com/register");
+		//Thread.sleep(3000);
+		WebElement login_signup_btn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/register']")));
+		 Thread.sleep(1000);
 		 login_signup_btn.click();
-		 Thread.sleep(3000);
-		 */
+		 Thread.sleep(2000);
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_name1")));
-		 Thread.sleep(3000);
+		 //Thread.sleep(3000);
 		 name.sendKeys("Automated Program");
-		 Thread.sleep(3000);
+		 //Thread.sleep(3000);
 	   
 	
 		// Generate Random Email Address
