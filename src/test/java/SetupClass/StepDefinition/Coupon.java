@@ -26,8 +26,11 @@ public class Coupon extends SetupClass {
 	
 	@Given("^user is already on Website Home Page cc$")
 	public void user_is_already_on_Website_Home_Page_cc() throws Throwable {
-		driver.get(AppURL);
-		//driver.get("https://www.slidegeeks.com/");
+		//driver.get(AppURL);
+		driver.get("https://www.slidegeeks.com/");
+		Thread.sleep(3000);
+		driver.manage().deleteAllCookies();
+		Thread.sleep(4000);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		log.info("It's opening the website URL");
 		Thread.sleep(1000);
