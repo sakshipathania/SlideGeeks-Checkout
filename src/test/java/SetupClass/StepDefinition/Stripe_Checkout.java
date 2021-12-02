@@ -800,7 +800,14 @@ public class Stripe_Checkout extends SetupClass {
 	WebElement No_Delete = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div[3]/button[2]"));
 		Thread.sleep(2000);
 		No_Delete.click();
-                 Thread.sleep(1000);
+                 Thread.sleep(4000);
+		String verifyDeleteAccountMessage = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
+				.getText();
+		System.out.println("verifyText1 = " + verifyDeleteAccountMessage);
+
+		Assert.assertTrue("Your are not on paypal page", verifyDeleteAccountMessage.contentEquals("Your Account has been deleted successfully."));
+		Thread.sleep(2000);
      //  WebElement Signout = driver.findElement(By.xpath("//a[@href ='/logout']"));
 	//	Thread.sleep(3000);
 		//Signout.click();
