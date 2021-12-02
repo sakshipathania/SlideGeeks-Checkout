@@ -692,8 +692,8 @@ public class Paypal_Checkout extends SetupClass {
 		
 	      String expected = "2849.99";
               String actual = Value_after_coupon.getText();
-              System.out.println(actual);
-
+              System.out.println("actual = "+ actual);
+              Assert.assertTrue("Price does not matched", actual.contentEquals("2849.99"));
               if(expected.equals(actual)){
               System.out.println("Coupon applied Successfully");
               }
