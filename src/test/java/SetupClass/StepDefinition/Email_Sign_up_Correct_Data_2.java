@@ -22,7 +22,8 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 	
 	@Given("^user is already on Website Home Page ii$")
 	public void user_is_already_on_Website_Home_Page_ii() throws Throwable {
-		driver.get(AppURL);
+		//driver.get(AppURL);
+		driver.get("https://www.slidegeeks.com");
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		log.info("It's opening the website URL");
 		Thread.sleep(1000);
