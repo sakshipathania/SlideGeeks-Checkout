@@ -106,7 +106,7 @@ public class Paypal_Checkout extends SetupClass {
 		WebElement register_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".pg-register-button-new")));
 		 //Thread.sleep(3000);
 		register_btn.click();
-		 //Thread.sleep(5000);
+		 Thread.sleep(3000);
 	}
 	
     @Then("^user is redirected to pricing page and check the text1 PP1$")
