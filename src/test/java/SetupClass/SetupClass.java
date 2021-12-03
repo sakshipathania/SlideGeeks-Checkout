@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import java.util.concurrent.TimeUnit;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SetupClass {
@@ -43,6 +43,7 @@ public class SetupClass {
 			options.addArguments("--disable-notifications");
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
+			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			Thread.sleep(1000);
 		}
 		// if (browser.equalsIgnoreCase("firefox"))
@@ -51,6 +52,7 @@ public class SetupClass {
 		else if ((local_FFbrowser.equals("yes"))) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 
 			Thread.sleep(1000);
 		} else {
@@ -60,8 +62,8 @@ public class SetupClass {
 
 		driver.get(AppURL);
 		Thread.sleep(2000);
-	    driver.manage().deleteAllCookies();
-	    Thread.sleep(2000);
+	        driver.manage().deleteAllCookies();
+	        Thread.sleep(2000);
 
 			
 		}
