@@ -659,8 +659,8 @@ public class Stripe_Checkout extends SetupClass {
 		
 	        //verify text message on paypal page 
 		String verifyText1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//div[@class='Header-backArrowContainer']//*[name()='svg']"))).getText();
-		System.out.println("verifyText1 = " + verifyText1);
+				"//span[@class='ProductSummary-name Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500']"))).getText();
+		System.out.println("verify subscription text= " + verifyText1);
 		
 		Assert.assertTrue("Your are not on paypal page",
 				verifyText1.contentEquals("Subscribe to Semi Annual"));
