@@ -655,7 +655,7 @@ public class Stripe_Checkout extends SetupClass {
 						driver.getTitle().contains("SlideTeam Geeks Inc"));
 		    
 
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 		
 	        //verify text message on paypal page 
 		String verifyText1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
