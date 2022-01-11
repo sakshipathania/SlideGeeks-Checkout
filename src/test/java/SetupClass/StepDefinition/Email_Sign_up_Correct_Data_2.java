@@ -24,6 +24,11 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 	public void user_is_already_on_Website_Home_Page_ii() throws Throwable {
 		//driver.get(AppURL);
 		driver.get("https://www.slidegeeks.com");
+		
+		driver.manage().deleteAllCookies();
+		Thread.sleep(4000); 
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		log.info("It's opening the website URL");
 		Thread.sleep(1000);
@@ -189,15 +194,15 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 	WebElement No_Delete = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div[3]/button[2]"));
 		Thread.sleep(3000);
 		No_Delete.click();
-                 Thread.sleep(5000);
-		
-		String verifyDeleteAccountMessage = wait
+                 Thread.sleep(7000);
+		 Thread.sleep(7000);
+		/*String verifyDeleteAccountMessage = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
 				.getText();
 		System.out.println("verifyText1 = " + verifyDeleteAccountMessage);
 
 		Assert.assertTrue("Your are not on paypal page", verifyDeleteAccountMessage.contentEquals("Your Account has been deleted successfully."));
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
      //  WebElement Signout = driver.findElement(By.xpath("//a[@href ='/logout']"));
 	//	Thread.sleep(3000);
 		//Signout.click();
