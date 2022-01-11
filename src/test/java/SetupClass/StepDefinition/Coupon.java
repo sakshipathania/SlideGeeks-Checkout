@@ -31,6 +31,8 @@ public class Coupon extends SetupClass {
 		Thread.sleep(3000);
 		driver.manage().deleteAllCookies();
 		Thread.sleep(4000);
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		log.info("It's opening the website URL");
 		Thread.sleep(1000);
@@ -285,7 +287,7 @@ public class Coupon extends SetupClass {
 	WebElement No_Delete = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div[3]/button[2]"));
 		Thread.sleep(3000);
 		No_Delete.click();
-                 Thread.sleep(4000);
+                 Thread.sleep(7000);
 		
 		
 	}
