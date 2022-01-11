@@ -20,7 +20,7 @@ import cucumber.api.java.en.Then;
 
 public class Coupon extends SetupClass {
 	
-	WebDriverWait wait = new WebDriverWait(driver,50);
+	WebDriverWait wait = new WebDriverWait(driver,60);
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	
