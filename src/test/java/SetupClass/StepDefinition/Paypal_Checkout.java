@@ -30,11 +30,16 @@ public class Paypal_Checkout extends SetupClass {
 	public void user_is_already_on_Website_Home_Page() throws Throwable {
 		//driver.get(AppURL);
 		driver.get("https://www.slidegeeks.com/");
+		
+		driver.manage().deleteAllCookies();
+		Thread.sleep(4000); 
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		log.info("It's opening the website URL");
 		Thread.sleep(1000);
 		
-		try {
+		/*try {
 			WebElement logout = driver.findElement(By.xpath("//a[@href ='/logout']"));
 			if (logout.isEnabled()) {
 				logout.click();
@@ -44,7 +49,7 @@ public class Paypal_Checkout extends SetupClass {
 			}
 		} catch (NoSuchElementException Ext) {
 
-		}
+		}*/
 		Thread.sleep(3000);
 		driver.get("https://www.slidegeeks.com/register");
 		Thread.sleep(3000);
@@ -922,13 +927,13 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		No_Delete.click();
                  Thread.sleep(5000);
-		String verifyDeleteAccountMessage = wait
+		/*String verifyDeleteAccountMessage = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
 				.getText();
 		System.out.println("verifyText1 = " + verifyDeleteAccountMessage);
 
 		Assert.assertTrue("Your are not on paypal page", verifyDeleteAccountMessage.contentEquals("Your Account has been deleted successfully."));
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
      //  WebElement Signout = driver.findElement(By.xpath("//a[@href ='/logout']"));
 	//	Thread.sleep(3000);
 		//Signout.click();
