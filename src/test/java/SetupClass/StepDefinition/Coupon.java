@@ -66,7 +66,7 @@ public class Coupon extends SetupClass {
 	    driver.get("https://www.slidegeeks.com/subscriptions");
 		Thread.sleep(4000);
 		//Thread.sleep(3000);
-		 WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#Monthly")));
+		 WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117'] span")));
 		Thread.sleep(3000);
 		Join_now.click();
 		Thread.sleep(5000);
@@ -78,7 +78,7 @@ public class Coupon extends SetupClass {
 		//driver.get("https://www.slidegeeks.com/register");
 		Thread.sleep(3000);
 		
-		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_name1")));
+		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		 Thread.sleep(3000);
 		 name.sendKeys("Automated Program");
 		 Thread.sleep(3000);
@@ -105,25 +105,25 @@ public class Coupon extends SetupClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
 		Thread.sleep(2000);
 		
-		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_email1")));
-		 Thread.sleep(3000);
+		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_email")));
+		// Thread.sleep(3000);
 		 new_email.sendKeys(full_email);
 		 Thread.sleep(3000);
 		
 	
-		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_password1")));
-		 Thread.sleep(3000);
+		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password")));
+		// Thread.sleep(3000);
 		password.sendKeys("Geeks@123");
 		 Thread.sleep(3000);
 		 
-		 WebElement confirm_passwoed = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_password2")));
-		 Thread.sleep(3000);
+		 WebElement confirm_passwoed = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password2")));
+		// Thread.sleep(3000);
 		confirm_passwoed.sendKeys("Geeks@123");
 		 Thread.sleep(3000);
 	    
 	
 		WebElement captcha = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#captchtext")));
-		 Thread.sleep(3000);
+		// Thread.sleep(3000);
 		captcha.sendKeys("Y3Tt6bfwI");
 		 Thread.sleep(3000);
 	    
@@ -140,7 +140,7 @@ public class Coupon extends SetupClass {
 		// choose a plan
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		Thread.sleep(3000);
-		 WebElement Subscribe_btn  =  driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[2]/div/div[1]/div/div[2]/div[3]/span/form/span/button"));
+		 WebElement Subscribe_btn  =  driver.findElement(By.xpath("div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117'] span"));
 		js.executeScript("arguments[0].scrollIntoView();",Subscribe_btn);
 			Thread.sleep(2000);
 		    Subscribe_btn.click();
@@ -164,7 +164,7 @@ public class Coupon extends SetupClass {
 		
 		    try
 		{
-			WebElement cp_btn  = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]"));
+			WebElement cp_btn  = driver.findElement(By.xpath("//label[@for='payment_radio_1_2__stripe_2']"));
 			Thread.sleep(2000);
 		    cp_btn.click();
 		    Thread.sleep(3000);
@@ -180,18 +180,18 @@ public class Coupon extends SetupClass {
 		Thread.sleep(3000);
 		Coupon.click();
 		Thread.sleep(3000);
-		 WebElement Add_Coupon= driver.findElement(By.cssSelector("#checkbox-input"));
+		 WebElement Add_Coupon= driver.findElement(By.cssSelector("#hikashop_checkout_coupon_input_1_3"));
 		Thread.sleep(3000);
 		Add_Coupon.sendKeys("5OFF");
 		Thread.sleep(3000);
 		Thread.sleep(3000);
-		 WebElement Apply_Coupon= driver.findElement(By.cssSelector("#applyPromoCode"));
+		 WebElement Apply_Coupon= driver.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
 		Thread.sleep(3000);
 		Apply_Coupon.click();
 		Thread.sleep(3000);
     
 		//Remove Coupon
-		 WebElement Remove_Coupon= driver.findElement(By.cssSelector("#removePromoCode"));
+		 WebElement Remove_Coupon= driver.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
 		Thread.sleep(3000);
 		Remove_Coupon.click();
 		Thread.sleep(3000);
@@ -201,23 +201,23 @@ public class Coupon extends SetupClass {
 		Thread.sleep(3000);
 		Coupon1.click();
 		Thread.sleep(3000);
-		 WebElement Add_Coupon1= driver.findElement(By.cssSelector("#checkbox-input"));
+		 WebElement Add_Coupon1= driver.findElement(By.cssSelector("#hikashop_checkout_coupon_input_1_3"));
 		Thread.sleep(3000);
 		Add_Coupon1.sendKeys("5OFF");
 		Thread.sleep(3000);
 		Thread.sleep(3000);
-		 WebElement Apply_Coupon1= driver.findElement(By.cssSelector("#applyPromoCode"));
+		 WebElement Apply_Coupon1= driver.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
 		Thread.sleep(3000);
 		Apply_Coupon1.click();
 		Thread.sleep(3000);
     
-		WebElement Value_after_coupon= driver.findElement(By.cssSelector("body > div.afterBody.checkout-wrapper.main-wrapper.no-left-menu > div.main_wrapper > div > div.checkout-inner-wrapper > div.checkout-box-wrapper.checkout-order > div > div > table > tbody > tr:nth-child(4) > td:nth-child(2) > strong > em"));
+		WebElement Value_after_coupon= driver.findElement(By.cssSelector(".cart_price"));
 		
-	      String expected = "47.49";
+	      String expected = "$47.49";
               String actual = Value_after_coupon.getText();
-              System.out.println(actual);
+              System.out.println("after coupon applied price is = "+actual);
 		
-              Assert.assertTrue("Price does not matched", actual.contentEquals("47.49"));
+              Assert.assertTrue("Price does not matched", actual.contentEquals("$47.49"));
 		
               if(expected.equals(actual)){
               System.out.println("Coupon applied Successfully");
@@ -230,12 +230,12 @@ public class Coupon extends SetupClass {
 		Thread.sleep(1000);
 		   try {
 			
-		 WebElement place_order_btn  =  driver.findElement(By.cssSelector("body > div.afterBody.checkout-wrapper.main-wrapper.no-left-menu > div.main_wrapper > div > div.checkout-inner-wrapper > div.checkout-box-wrapper.checkout-order > div > div > table > tbody > tr:nth-child(4) > td:nth-child(1) > button.btn.primary-btn.pg-button.pg-checkout-continue"));
+		 WebElement place_order_btn  =  driver.findElement(By.cssSelector("#hikabtn_checkout_next"));
 			Thread.sleep(2000);
 			js.executeScript("arguments[0].scrollIntoView();",place_order_btn);	
 			//js.executeScript("arguments[0].click();", place_order_btn);
 			Thread.sleep(2000);
-		    place_order_btn.click();
+		        place_order_btn.click();
 			Thread.sleep(5000);
 		} catch (NoSuchElementException popup) {
 		}
