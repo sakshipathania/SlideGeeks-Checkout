@@ -66,7 +66,7 @@ public class Coupon extends SetupClass {
 	    driver.get("https://www.slidegeeks.com/subscriptions");
 		Thread.sleep(4000);
 		//Thread.sleep(3000);
-		 WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117'] span")));
+		 WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']")));
 		Thread.sleep(3000);
 		Join_now.click();
 		Thread.sleep(5000);
@@ -140,7 +140,7 @@ public class Coupon extends SetupClass {
 		// choose a plan
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		Thread.sleep(3000);
-		 WebElement Subscribe_btn  =  driver.findElement(By.xpath("div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117'] span"));
+		 WebElement Subscribe_btn  =  driver.findElement(By.xpath("div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']"));
 		js.executeScript("arguments[0].scrollIntoView();",Subscribe_btn);
 			Thread.sleep(2000);
 		    Subscribe_btn.click();
