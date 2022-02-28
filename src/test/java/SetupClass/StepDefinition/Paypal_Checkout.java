@@ -339,8 +339,8 @@ public class Paypal_Checkout extends SetupClass {
 		//driver.get("https://www.slidegeeks.com/subscriptions");
 		      // Thread.sleep(4000);
 		
-		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick="if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')"]")));
-				Thread.sleep(1000);
+		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick=\"if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')\"]")));
+                Thread.sleep(1000);
 		js.executeScript("arguments[0].scrollIntoView();",Business_Team);
 		Business_Team.click();
 		Thread.sleep(1000);
@@ -520,7 +520,7 @@ public class Paypal_Checkout extends SetupClass {
 		//Thread.sleep(7000);
 		//driver.get("https://www.slidegeeks.com/subscriptions");
 		//      Thread.sleep(4000);
-		WebElement Education = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick="if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Education')"]")));
+		WebElement Education = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick=\"if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Education')\"]")));
 				Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();", Education);
 		Education.click();
@@ -637,7 +637,7 @@ public class Paypal_Checkout extends SetupClass {
 		// choose a plan
 		//driver.get("https://www.slidegeeks.com/subscriptions");
 		Thread.sleep(3000);
-		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick="if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')"]")));
+		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick=\"if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')\"]")));
 				Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();",Business_Team);
 		Business_Team.click();
