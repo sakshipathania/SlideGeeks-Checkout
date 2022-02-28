@@ -192,7 +192,7 @@ public class Coupon extends SetupClass {
     
 		//Remove Coupon
 		 WebElement Remove_Coupon= driver.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		Remove_Coupon.click();
 		Thread.sleep(3000);
     
@@ -269,13 +269,13 @@ public class Coupon extends SetupClass {
 	WebElement Account = driver.findElement(By.xpath("/html/body/div[1]/header/div/div/nav/div/div[2]/div[2]/div[2]/div/div[2]/ul/li[1]/a"));
 		Thread.sleep(3000);
 		Account.click();
-                 Thread.sleep(3000);
+                Thread.sleep(3000);
 	WebElement Delete_Account = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div/div/div/div[2]/div/ul/li[6]/a"));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",Delete_Account);	
 		Thread.sleep(3000);
 		Delete_Account.click();
-                 Thread.sleep(3000);
+                Thread.sleep(3000);
 	WebElement Delete_Account_reason = driver.findElement(By.cssSelector("#only-free-download-product"));
 		Thread.sleep(3000);
 		Delete_Account_reason.click();
