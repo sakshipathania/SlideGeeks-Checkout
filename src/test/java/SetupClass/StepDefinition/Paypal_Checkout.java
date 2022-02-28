@@ -57,7 +57,7 @@ public class Paypal_Checkout extends SetupClass {
 		 Thread.sleep(1000);
 		 login_signup_btn.click();*/
 		 Thread.sleep(2000);
-		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.name("jform[name1]")));
+		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		// Thread.sleep(3000);
 		name.clear();
 		 name.sendKeys("Automated Program");
@@ -85,18 +85,18 @@ public class Paypal_Checkout extends SetupClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
 		Thread.sleep(2000);
 		
-		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.name("jform[email1]")));
+		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_email")));
 		// Thread.sleep(3000);
 		 new_email.sendKeys(full_email);
 		 Thread.sleep(3000);
 		
 	
-		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_password1")));
+		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password")));
 		// Thread.sleep(3000);
 		password.sendKeys("Geeks@123");
 		 Thread.sleep(3000);
 		 
-		 WebElement confirm_passwoed = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#jform_password2")));
+		 WebElement confirm_passwoed = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password2")));
 		// Thread.sleep(3000);
 		confirm_passwoed.sendKeys("Geeks@123");
 		 Thread.sleep(3000);
@@ -339,7 +339,7 @@ public class Paypal_Checkout extends SetupClass {
 		//driver.get("https://www.slidegeeks.com/subscriptions");
 		      // Thread.sleep(4000);
 		
-		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[1]/div/div/button[2]")));
+		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick="if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')"]")));
 				Thread.sleep(1000);
 		js.executeScript("arguments[0].scrollIntoView();",Business_Team);
 		Business_Team.click();
@@ -520,7 +520,7 @@ public class Paypal_Checkout extends SetupClass {
 		//Thread.sleep(7000);
 		//driver.get("https://www.slidegeeks.com/subscriptions");
 		//      Thread.sleep(4000);
-		WebElement Education = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[1]/div/div/button[3]")));
+		WebElement Education = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick="if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Education')"]")));
 				Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();", Education);
 		Education.click();
@@ -637,13 +637,13 @@ public class Paypal_Checkout extends SetupClass {
 		// choose a plan
 		//driver.get("https://www.slidegeeks.com/subscriptions");
 		Thread.sleep(3000);
-		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[1]/div/div/button[2]")));
+		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick="if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')"]")));
 				Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();",Business_Team);
 		Business_Team.click();
 		Thread.sleep(4000);
 		//js.executeScript("window.scrollBy(0,1000)");
-		 WebElement Subscribe_btn  =  driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[2]/div/div[2]/div/div[4]/div[3]/span/form/span/button"));
+		 WebElement Subscribe_btn  =  driver.findElement(By.xpath("//div[@id='Business']//div[@class='col-box table-col item education_call last']//span[contains(text(),'Join now')]"));
 		js.executeScript("arguments[0].scrollIntoView();",Subscribe_btn);
 			Thread.sleep(2000);
 		    Subscribe_btn.click();
@@ -667,7 +667,7 @@ public class Paypal_Checkout extends SetupClass {
 		
 		    try
 		{
-			    WebElement cp_btn  = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]"));
+			    WebElement cp_btn  = driver.findElement(By.xpath("//label[@for='payment_radio_1_2__paypal_1']"));
 			//WebElement cp_btn  = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-checkout-billing-payment-form > div > div:nth-child(2) > label")));
 			Thread.sleep(2000);
 		    cp_btn.click();
@@ -684,21 +684,21 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		Coupon.click();
 		Thread.sleep(3000);
-		 WebElement Add_Coupon= driver.findElement(By.cssSelector("#checkbox-input"));
+		 WebElement Add_Coupon= driver.findElement(By.cssSelector("#hikashop_checkout_coupon_input_1_3"));
 		Thread.sleep(3000);
 		Add_Coupon.sendKeys("5OFF");
 		Thread.sleep(3000);
-		 WebElement Apply_Coupon= driver.findElement(By.cssSelector("#applyPromoCode"));
+		 WebElement Apply_Coupon= driver.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
 		Thread.sleep(3000);
 		Apply_Coupon.click();
 		Thread.sleep(3000);
 		
 		WebElement Value_after_coupon= driver.findElement(By.cssSelector("body > div.afterBody.checkout-wrapper.main-wrapper.no-left-menu > div.main_wrapper > div > div.checkout-inner-wrapper > div.checkout-box-wrapper.checkout-order > div > div > table > tbody > tr:nth-child(4) > td:nth-child(2) > strong > em"));
 		
-	      String expected = "2849.99";
+	      String expected = "$2849.99";
               String actual = Value_after_coupon.getText();
               System.out.println("actual = "+ actual);
-              Assert.assertTrue("Price does not matched", actual.contentEquals("2849.99"));
+              Assert.assertTrue("Price does not matched", actual.contentEquals("$2849.99"));
               if(expected.equals(actual)){
               System.out.println("Coupon applied Successfully");
               }
@@ -710,7 +710,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(1000);
 		   try {
 			
-		 WebElement place_order_btn  =  driver.findElement(By.cssSelector("body > div.afterBody.checkout-wrapper.main-wrapper.no-left-menu > div.main_wrapper > div > div.checkout-inner-wrapper > div.checkout-box-wrapper.checkout-order > div > div > table > tbody > tr:nth-child(4) > td:nth-child(1) > button.btn.primary-btn.pg-button.pg-checkout-continue"));
+		 WebElement place_order_btn  =  driver.findElement(By.cssSelector("#hikabtn_checkout_next"));
 			Thread.sleep(2000);
 			js.executeScript("arguments[0].scrollIntoView();",place_order_btn);	
 			//js.executeScript("arguments[0].click();", place_order_btn);
