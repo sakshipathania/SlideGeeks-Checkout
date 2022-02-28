@@ -115,7 +115,7 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		//Apply Coupon 
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		Thread.sleep(4000);
-		 WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#Monthly")));
+		 WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']")));
 		Thread.sleep(3000);
 		Join_now.click();
 		Thread.sleep(3000);
@@ -123,22 +123,22 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(3000);
 		Coupon.click();
 		Thread.sleep(3000);
-		 WebElement Add_Coupon= driver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div[2]/div[1]/div[1]/form[2]/div[2]/div[2]/input"));
+		 WebElement Add_Coupon= driver.findElement(By.cssSelector("#hikashop_checkout_coupon_input_1_3"));
 		Thread.sleep(3000);
 		Add_Coupon.sendKeys("5OFF");
 		Thread.sleep(3000);
-		 WebElement Apply_Coupon= driver.findElement(By.cssSelector("#applyPromoCode"));
+		 WebElement Apply_Coupon= driver.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
 		Thread.sleep(3000);
 		Apply_Coupon.click();
 		Thread.sleep(3000);
 		//Remove Coupon
-		 WebElement Remove_Coupon= driver.findElement(By.cssSelector("#removePromoCode"));
+		 WebElement Remove_Coupon= driver.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
 		Thread.sleep(3000);
 		Remove_Coupon.click();
 		Thread.sleep(3000);
 		
 		//Checkout
-		 WebElement place_order_btn  = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div.afterBody.checkout-wrapper.main-wrapper.no-left-menu > div.main_wrapper > div > div.checkout-inner-wrapper > div.checkout-box-wrapper.checkout-order > div > div > table > tbody > tr:nth-child(4) > td:nth-child(1) > button.btn.primary-btn.pg-button.pg-checkout-continue")));
+		 WebElement place_order_btn  = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#hikabtn_checkout_next")));
 			Thread.sleep(2000);
 			js.executeScript("arguments[0].scrollIntoView();",place_order_btn);	
 			//js.executeScript("arguments[0].click();", place_order_btn);
