@@ -320,7 +320,7 @@ public class Stripe_Checkout extends SetupClass {
 		//driver.get("https://www.slidegeeks.com/subscriptions");
 		     //  Thread.sleep(4000);
 		
-		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick="if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')"]")));
+		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick=\"if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')\"]")));
 	        Thread.sleep(1000);
 		js.executeScript("arguments[0].scrollIntoView();",Business_Team);
 		Business_Team.click();
@@ -481,7 +481,7 @@ public class Stripe_Checkout extends SetupClass {
 		//Thread.sleep(7000);
 		//driver.get("https://www.slidegeeks.com/subscriptions");
 		      // Thread.sleep(4000);
-		WebElement Education = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick="if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Education')"]")));
+		WebElement Education = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick=\"if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Education')\"]")));
 		js.executeScript("arguments[0].scrollIntoView();", Education);
 		Thread.sleep(1000);
 		Education.click();
