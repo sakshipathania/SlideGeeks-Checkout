@@ -678,7 +678,9 @@ public class Stripe_Checkout extends SetupClass {
 
 		Assert.assertTrue("Your are not on paypal page", verifyPrice.contentEquals("$149.99"));
 		
-		
+		WebElement Stripe_back1 = driver.findElement(By.cssSelector("#root > div > div > div.App-Overview > header > div > div > a > div > div > div.Header-backArrowContainer > svg"));
+		Thread.sleep(2000);
+	        Stripe_back1.click();
 	  
 		
 		
@@ -780,9 +782,7 @@ public class Stripe_Checkout extends SetupClass {
 
 	@Then("^user signout the account (\\d+)CO$")
 	public void user_signout_the_account_CO(int arg1) throws Throwable {
-		Thread.sleep(2000);
-	        driver.get("https://www.slidegeeks.com/component/pago/checkout");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	WebElement Account = driver.findElement(By.xpath("/html/body/div[1]/header/div/div/nav/div/div[2]/div[2]/div[2]/div/div[2]/ul/li[1]/a"));
 		Thread.sleep(2000);
 		Account.click();
@@ -805,13 +805,13 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(2000);
 		No_Delete.click();
                  Thread.sleep(4000);
-		/*String verifyDeleteAccountMessage = wait
+		String verifyDeleteAccountMessage = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
 				.getText();
 		System.out.println("verifyText1 = " + verifyDeleteAccountMessage);
 
 		Assert.assertTrue("Your are not on paypal page", verifyDeleteAccountMessage.contentEquals("Your Account has been deleted successfully."));
-		Thread.sleep(2000);*/
+		Thread.sleep(2000);
      //  WebElement Signout = driver.findElement(By.xpath("//a[@href ='/logout']"));
 	//	Thread.sleep(3000);
 		//Signout.click();
