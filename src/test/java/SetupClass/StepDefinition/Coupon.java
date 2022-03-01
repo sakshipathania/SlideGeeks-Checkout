@@ -250,10 +250,6 @@ public class Coupon extends SetupClass {
 		  String pp_page_title=driver.getTitle();
 			Thread.sleep(3000);
 		    System.out.println("Title of the Page is --> "+pp_page_title);
-		
-		Thread.sleep(2000);
-				  driver.get("https://www.slidegeeks.com/component/pago/checkout");
-				 // driver.switchTo().window(currentWindow);
 			 
 	}
 
@@ -261,11 +257,8 @@ public class Coupon extends SetupClass {
 	@Then("^user Signout account PP cc$")
 	public void user_Signout_account_PP_cc() throws Throwable {
 		Thread.sleep(3000);
-	    driver.get("https://www.slidegeeks.com/component/pago/checkout");
+	    driver.get("https://www.slidegeeks.com/checkout");
 		Thread.sleep(2000);
-		
-		 //  driver.get("https://www.slidegeeks.com/component/pago/checkout");
-		//Thread.sleep(2000);
 	WebElement Account = driver.findElement(By.xpath("/html/body/div[1]/header/div/div/nav/div/div[2]/div[2]/div[2]/div/div[2]/ul/li[1]/a"));
 		Thread.sleep(3000);
 		Account.click();
