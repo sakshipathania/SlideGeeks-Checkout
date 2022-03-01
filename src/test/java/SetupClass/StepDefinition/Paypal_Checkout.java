@@ -693,7 +693,7 @@ public class Paypal_Checkout extends SetupClass {
 		Apply_Coupon.click();
 		Thread.sleep(3000);
 		
-		WebElement Value_after_coupon= driver.findElement(By.cssSelector("body > div.afterBody.checkout-wrapper.main-wrapper.no-left-menu > div.main_wrapper > div > div.checkout-inner-wrapper > div.checkout-box-wrapper.checkout-order > div > div > table > tbody > tr:nth-child(4) > td:nth-child(2) > strong > em"));
+	      WebElement Value_after_coupon= driver.findElement(By.cssSelector(".cart_price"));
 		
 	      String expected = "$2849.99";
               String actual = Value_after_coupon.getText();
