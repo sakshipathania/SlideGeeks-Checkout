@@ -600,7 +600,7 @@ public class Stripe_Checkout extends SetupClass {
 				Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();",individual);
 		individual.click();
-		 WebElement Subscribe_btn  =  driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div[2]/div/div[1]/div/div[3]/div[3]/span/form/span/button"));
+		 WebElement Subscribe_btn  =  driver.findElement(By.xpath("//div[@id='Individual']//form[@name='hikashop_product_form_99148_hikashop_category_information_menu_117']//span[contains(text(),'Join now')]"));
 		js.executeScript("arguments[0].scrollIntoView();",Subscribe_btn);
 		Thread.sleep(2000);
 		    Subscribe_btn.click();
@@ -624,7 +624,7 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(2000);
 		// select stripe option  
 		//WebElement co_btn  =  wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-checkout-billing-payment-form > div > div:nth-child(1) > label")));
-		WebElement cp_btn  = driver.findElement(By.xpath("//div[@id='Individual']//form[@name='hikashop_product_form_99148_hikashop_category_information_menu_117']//span[contains(text(),'Join now')]"));
+		WebElement cp_btn  = driver.findElement(By.xpath("//label[@for='payment_radio_1_2__stripe_2']"));
 			
 			Thread.sleep(2000);
 			 //Thread.sleep(2000);
