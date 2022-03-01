@@ -687,7 +687,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		Apply_Coupon.click();
 		Thread.sleep(3000);
-		
+		Thread.sleep(4000);
 	      WebElement Value_after_coupon= driver.findElement(By.cssSelector(".cart_price"));
 		
 	      String expected = "$2849.99";
@@ -922,13 +922,13 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		No_Delete.click();
                  Thread.sleep(5000);
-		/*String verifyDeleteAccountMessage = wait
+		String verifyDeleteAccountMessage = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
 				.getText();
 		System.out.println("verifyText1 = " + verifyDeleteAccountMessage);
 
 		Assert.assertTrue("Your are not on paypal page", verifyDeleteAccountMessage.contentEquals("Your Account has been deleted successfully."));
-		Thread.sleep(3000);*/
+		Thread.sleep(3000);
      //  WebElement Signout = driver.findElement(By.xpath("//a[@href ='/logout']"));
 	//	Thread.sleep(3000);
 		//Signout.click();
