@@ -680,7 +680,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		//Apply coupon
 
-		WebElement Coupon= driver.findElement(By.cssSelector("#discount-checkbox"));
+		WebElement Coupon= driver.findElement(By.cssSelector("label[for='discount-checkbox']"));
 		Thread.sleep(3000);
 		Coupon.click();
 		Thread.sleep(3000);
