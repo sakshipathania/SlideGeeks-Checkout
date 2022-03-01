@@ -126,8 +126,8 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Apply_Coupon.click();
 		Thread.sleep(3000);
 		// Remove Coupon
-		WebElement Remove_Coupon = driver
-				.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
+		WebElement Remove_Coupon = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn")));
 		Thread.sleep(3000);
 		Remove_Coupon.click();
 		Thread.sleep(3000);
