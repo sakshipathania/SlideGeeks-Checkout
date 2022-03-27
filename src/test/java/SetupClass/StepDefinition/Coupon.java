@@ -26,7 +26,6 @@ public class Coupon extends SetupClass {
 	
 	@Given("^user is already on Website Home Page cc$")
 	public void user_is_already_on_Website_Home_Page_cc() throws Throwable {
-		//driver.get(AppURL);
 		driver.get("https://www.slidegeeks.com/");
 		Thread.sleep(3000);
 		driver.manage().deleteAllCookies();
@@ -34,104 +33,70 @@ public class Coupon extends SetupClass {
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		log.info("It's opening the website URL");
-		Thread.sleep(1000);
-		
-		try {
-			WebElement iframe = driver.findElement(By.id("livechat-full-view"));
-			if(iframe.isDisplayed()) {
-				driver.switchTo().frame(iframe);   
-				 Actions act = new Actions(driver);
-				 act.moveToElement(driver.findElement(By.cssSelector("#title .icon-minimize"))).build().perform();
-				 Thread.sleep(2000);
-					WebElement chat1=driver.findElement(By.cssSelector("#title .icon-minimize"));
-					 Thread.sleep(1000);
-						chat1.click();
-						 Thread.sleep(1000);
-						 driver.switchTo().defaultContent();
-						 Thread.sleep(1000);
-						 driver.switchTo().parentFrame();
-					 Thread.sleep(1000);
-			}
-			else {
-				
 
-			System.out.println("chat window does not open");
-			}
-		}
-				catch(NoSuchElementException NCP) {
-					
-				}
 		Thread.sleep(3000);
-	    driver.get("https://www.slidegeeks.com/subscriptions");
-		Thread.sleep(4000);
-		//Thread.sleep(3000);
-		 WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']")));
-		Thread.sleep(3000);
-		Join_now.click();
-		Thread.sleep(5000);
-		
-		WebElement create_account = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#pg-account-action > div > div:nth-child(1) > div > div > div.btn-wrapper.create_accbtn > a")));
-		Thread.sleep(3000);
-		create_account.click();
+
+		WebElement pricing = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Pricing']")));
+		pricing.click();
 		Thread.sleep(2000);
-		//driver.get("https://www.slidegeeks.com/register");
+		WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
+				"div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']")));
+
+		Join_now.click();
+		Thread.sleep(2000);
+
+		WebElement name = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_name']")));
 		Thread.sleep(3000);
-		
-		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
-		 Thread.sleep(3000);
-		 name.sendKeys("Automated Program");
-		 Thread.sleep(3000);
-	   
-	
+		name.sendKeys("Automated Program");
+		Thread.sleep(3000);
+
 		// Generate Random Email Address
 		int leftLimit = 97; // letter 'a'
-	    int rightLimit = 122; // letter 'z'
-	    int targetStringLength = 10;
-	    Random random = new Random();
-	    StringBuilder buffer = new StringBuilder(targetStringLength);
-	    for (int i = 0; i < targetStringLength; i++) {
-	        int randomLimitedInt = leftLimit + (int) 
-	          (random.nextFloat() * (rightLimit - leftLimit + 1));
-	        buffer.append((char) randomLimitedInt);
-	    }
-	    String generatedString = buffer.toString();
-	 
-	    System.out.println(generatedString);
-	    
-	    String signup_email=generatedString;
-	    String full_email="selenium.testing."+generatedString+"@gmail.com";
-	    System.out.println(full_email);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
-		Thread.sleep(2000);
-		
-		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_email")));
-		// Thread.sleep(3000);
-		 new_email.sendKeys(full_email);
-		 Thread.sleep(3000);
-		
-	
-		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password")));
-		// Thread.sleep(3000);
-		password.sendKeys("Geeks@123");
-		 Thread.sleep(3000);
-		 
-		 WebElement confirm_passwoed = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password2")));
-		// Thread.sleep(3000);
-		confirm_passwoed.sendKeys("Geeks@123");
-		 Thread.sleep(3000);
-	    
-	
-		WebElement captcha = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#captchtext")));
-		// Thread.sleep(3000);
-		captcha.sendKeys("Y3Tt6bfwI");
-		 Thread.sleep(3000);
-	    
+		int rightLimit = 122; // letter 'z'
+		int targetStringLength = 10;
+		Random random = new Random();
+		StringBuilder buffer = new StringBuilder(targetStringLength);
+		for (int i = 0; i < targetStringLength; i++) {
+			int randomLimitedInt = leftLimit + (int) (random.nextFloat() * (rightLimit - leftLimit + 1));
+			buffer.append((char) randomLimitedInt);
+		}
+		String generatedString = buffer.toString();
 
-		WebElement register_btn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".pg-register-button-new")));
-		 Thread.sleep(3000);
+		System.out.println(generatedString);
+
+		String signup_email = generatedString;
+		String full_email = "selenium.testing." + generatedString + "@gmail.com";
+		System.out.println(full_email);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(2000);
+
+		WebElement new_email = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_email']")));
+
+		new_email.sendKeys(full_email);
+		Thread.sleep(3000);
+
+		WebElement password = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_password']")));
+
+		password.sendKeys("Geeks@123");
+
+		WebElement captcha = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='captchtext']")));
+
+		captcha.sendKeys("Y3Tt6bfwI");
+
+		WebElement selectRadioBtn = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_checkbox']")));
+
+		selectRadioBtn.click();
+
+		WebElement register_btn = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='site_signup_btn']")));
+		Thread.sleep(3000);
 		register_btn.click();
-		 Thread.sleep(5000);
+		Thread.sleep(5000);
 	}
 	
     
