@@ -45,6 +45,11 @@ public class Coupon extends SetupClass {
 
 		Join_now.click();
 		Thread.sleep(2000);
+		
+		WebElement signup = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='signupclass']")));
+
+		signup.click();
+		Thread.sleep(2000);
 
 		/*WebElement name = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_name']")));
