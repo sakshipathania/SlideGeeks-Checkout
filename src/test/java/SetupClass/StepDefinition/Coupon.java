@@ -46,8 +46,13 @@ public class Coupon extends SetupClass {
 		Join_now.click();
 		Thread.sleep(2000);
 
-		WebElement name = wait
+		/*WebElement name = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_name']")));
+		Thread.sleep(3000);
+		name.sendKeys("Automated Program");
+		Thread.sleep(3000);*/
+		
+		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		Thread.sleep(3000);
 		name.sendKeys("Automated Program");
 		Thread.sleep(3000);
@@ -72,28 +77,49 @@ public class Coupon extends SetupClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(2000);
 
-		WebElement new_email = wait
+		/*WebElement new_email = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_email']")));
-
+		new_email.sendKeys(full_email);
+		Thread.sleep(3000);
+		WebElement password = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_password']")));
+		password.sendKeys("Geeks@123");
+		WebElement captcha = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='captchtext']")));
+		captcha.sendKeys("Y3Tt6bfwI");
+		WebElement selectRadioBtn = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_checkbox']")));
+		selectRadioBtn.click();
+		WebElement register_btn = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='site_signup_btn']")));
+		Thread.sleep(3000);
+		register_btn.click();
+		Thread.sleep(5000);*/
+		
+		
+		// without pop-up
+		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_email")));
+		Thread.sleep(3000);
 		new_email.sendKeys(full_email);
 		Thread.sleep(3000);
 
-		WebElement password = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_password']")));
-
+		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password")));
+		Thread.sleep(3000);
 		password.sendKeys("Geeks@123");
+		Thread.sleep(3000);
 
-		WebElement captcha = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='captchtext']")));
+		WebElement confirm_passwoed = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password2")));
+		Thread.sleep(3000);
+		confirm_passwoed.sendKeys("Geeks@123");
+		Thread.sleep(3000);
 
+		WebElement captcha = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#captchtext")));
+		Thread.sleep(3000);
 		captcha.sendKeys("Y3Tt6bfwI");
-
-		WebElement selectRadioBtn = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='site_signup_checkbox']")));
-
-		selectRadioBtn.click();
+		Thread.sleep(3000);
 
 		WebElement register_btn = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='site_signup_btn']")));
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".pg-register-button-new")));
 		Thread.sleep(3000);
 		register_btn.click();
 		Thread.sleep(5000);
