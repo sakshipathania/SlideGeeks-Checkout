@@ -156,7 +156,7 @@ public class Coupon extends SetupClass {
 	@Then("^user proceed to pay with paypal pp cc$")
 	public void user_proceed_to_pay_with_paypal_pp_cc() throws Throwable {
 	
-		Thread.sleep(1400);
+		Thread.sleep(7000);
 		
 		    try
 		{
