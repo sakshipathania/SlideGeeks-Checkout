@@ -3,7 +3,7 @@ package SetupClass;
 import java.io.FileReader;
 import java.util.Properties;
 import java.util.logging.Logger;
-
+import org.openqa.selenium.PageLoadStrategy;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
@@ -41,6 +41,7 @@ public class SetupClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
