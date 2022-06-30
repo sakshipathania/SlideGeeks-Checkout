@@ -658,7 +658,7 @@ public class Paypal_Checkout extends SetupClass {
 	@Then("^user proceed to pay with paypal pp$")
 	public void user_proceed_to_pay_with_paypal_pp() throws Throwable {
 	
-		Thread.sleep(1400);
+		Thread.sleep(7000);
 		
 		    try
 		{
