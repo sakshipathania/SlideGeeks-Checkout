@@ -11,6 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 import java.util.concurrent.TimeUnit;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -24,7 +26,7 @@ public class SetupClass {
 	public static WebElement webelement;
 	public static String local_chrome;
 	public static String local_FFbrowser;
-	
+
 	
 	@BeforeClass
 	public static void before_Class() throws Exception {
@@ -36,15 +38,21 @@ public class SetupClass {
 		// on source lab setup
 		AppURL = property.getProperty("App_url");
 		System.out.println("Bname=====" + AppURL);
-	
+
 		if ((local_chrome.equals("yes"))) {
 			WebDriverManager.chromedriver().setup();
+
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			driver = new ChromeDriver(options);
+
 			driver.manage().window().maximize();
+
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
+			driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
 			Thread.sleep(1000);
 		}
 		// if (browser.equalsIgnoreCase("firefox"))
@@ -54,6 +62,9 @@ public class SetupClass {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
+			driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
 
 			Thread.sleep(1000);
 		} else {
@@ -61,21 +72,22 @@ public class SetupClass {
 			System.out.println("platform does not provide");
 		}
 
-		driver.get(AppURL);
-		Thread.sleep(2000);
-	        driver.manage().deleteAllCookies();
-	        Thread.sleep(2000);
+	}
+	
+	public static void ClearBrowserCache() throws Throwable {
 
-			
-		}
-	
-	
+		driver.manage().deleteAllCookies();
+		Thread.sleep(4000); // wait 7 seconds to clear cookies.
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+	}
+
 	@AfterClass
 	public static void after_Class() throws InterruptedException {
 		Thread.sleep(2000);
-		driver.quit();  //->> don't want to close the browser for now
+		// driver.quit(); // ->> don't want to close the browser for now
 		Thread.sleep(2000);
-	
+
 	}
 
 }

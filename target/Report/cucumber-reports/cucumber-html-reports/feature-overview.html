@@ -51,8 +51,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                37,
-                0,
+                1,
+                1,
                 0,
                 0,
                 0
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 37) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                6,
-                0
+                0,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   6,
-                   0
+                   0,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>19 Aug 2019, 16:03</td>
+                        <td>02 Jul 2022, 08:33</td>
           </tr>
         </tbody>
       </table>
@@ -323,125 +323,50 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="src-test-java-Features-3-Forgot_password-feature.html">Forgot Password</a></td>
+        <td class="tagname"><a href="file-src-test-java-Features-2-Email_Sign_up_Correct_data-feature.html">Sign up with correct data</a></td>
         
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
-        <td      class="passed"    >6</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-        <td class="duration" data-value="29269605100">29s 269ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="src-test-java-Features-1-Email_Sign_up_Incorrect_data-feature.html">Sign up with incorrect data</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-        <td class="duration" data-value="123551026700">2m 3s 551ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="src-test-java-Features-2-Email_Sign_up_Correct_data-feature.html">Sign up with incorrect data</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-        <td class="duration" data-value="61731017700">1m 1s 731ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="src-test-java-Features-4-Email_Sign_In_Free_User-feature.html">free User Sign In via Email</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-        <td class="duration" data-value="44122439600">44s 122ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="src-test-java-Features-5-Email_Sign_In_Paid_user-feature.html">paid User Sign In via Email</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-        <td class="duration" data-value="51728785900">51s 728ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="src-test-java-Features-6-Email_Sign_In_Incorrect_data-feature.html">paid User Sign In via Email</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">4</td>
-        <td class="duration" data-value="32722284700">32s 722ms</td>
-        <td class="passed">Passed</td>
+        <td class="total">2</td>
+        <td class="duration" data-value="163858727900">2m 43s 858ms</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>6</td>
-            <td>6</td>
+      <td>1</td>
+            <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
       <td>0</td>
-      <td>6</td>
-      <td>37</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>37</td>
-      <td class="duration">5m 43s 125ms</td>
+      <td>2</td>
+      <td class="duration">2m 43s 858ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>0.00%</td>
+      <td>100.00%</td>
+      <td></td>
+      <td>50.00%</td>
+      <td>50.00%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
       <td></td>
       <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

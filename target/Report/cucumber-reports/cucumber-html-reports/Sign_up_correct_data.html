@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>19 Aug 2019, 16:03</td>
+                        <td>02 Jul 2022, 08:33</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Sign_up_correct_data</td>
-                    <td  class="passed"    >1</td>
-          <td >0</td>
+                    <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >7</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">7</td>
-          <td class="duration" data-value="61731017700">1m 1s 731ms</td>
-          <td class="passed">Passed</td>
+          <td class="total">2</td>
+          <td class="duration" data-value="163858727900">2m 43s 858ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -152,19 +152,20 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="src-test-java-Features-2-Email_Sign_up_Correct_data-feature.html">View Feature</a> <i>Sign up with incorrect data</i>
+      <a href="file-src-test-java-Features-2-Email_Sign_up_Correct_data-feature.html">View Feature</a> <i>Sign up with correct data</i>
     </div>
   
   
 <div class="tags indention">
+       <a href="Sign_up_correct_data.html">@Sign_up_correct_data</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Test Sign up with Incorrect Data</span>
+  <span class="name">Test Sign up with correct Data</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -173,15 +174,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -191,14 +192,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user is already on Website Home Page ii</span>
   
-  <span class="lead-duration duration">1s 022ms</span>
+  <span class="lead-duration duration">1m 467ms</span>
 
   </div>
 
@@ -215,120 +216,46 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Then</span>
   <span class="name">user navigates to sign up page ii</span>
   
-  <span class="lead-duration duration">9s 294ms</span>
+  <span class="lead-duration duration">1m 43s 390ms</span>
 
   </div>
 
         
 
-
-        
-        
-
-        
-
-        
-
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Error message</a>
       </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user enter name ii</span>
-  
-  <span class="lead-duration duration">6s 170ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.TimeoutException: TimedPromise timed out after 60000 ms
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17056, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5f2a14c2-c447-4e7b-9514-ee4cdf935b00
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2.user_navigates_to_sign_up_page_ii(Email_Sign_up_Correct_Data_2.java:94)
+	at ✽.user navigates to sign up page ii(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/2.Email_Sign_up_Correct_data.feature:6)
+</pre>
       </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user enter email ii</span>
-  
-  <span class="lead-duration duration">8s 212ms</span>
-
+    </div>
   </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user enter password and confirm password ii</span>
-  
-  <span class="lead-duration duration">12s 250ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user enter captcha ii</span>
-  
-  <span class="lead-duration duration">6s 116ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user click on register button to complete sign up ii</span>
-  
-  <span class="lead-duration duration">18s 664ms</span>
-
-  </div>
-
-        
 
 
         
@@ -344,6 +271,48 @@ $(document).ready(function() {
 
 
     
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SetupClass.StepDefinition.TakeImageStep.tearDown(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">187ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1293930544" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1293930544.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1293930544" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1293930544.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>

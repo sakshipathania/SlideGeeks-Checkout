@@ -1,0 +1,7 @@
+SetupClass\StepDefinition\Stripe_Checkout.class
+SetupClass\StepDefinition\TakeImageStep.class
+SetupClass\StepDefinition\Coupon.class
+SetupClass\StepDefinition\Paypal_Checkout.class
+SetupClass\SetupClass.class
+SetupClass\StepDefinition\Email_Sign_up_Correct_Data_2.class
+SetupClass\TestRunnner.class

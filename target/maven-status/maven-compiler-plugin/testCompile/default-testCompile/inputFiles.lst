@@ -1,8 +1,7 @@
-C:\Users\slide53\eclipse-workspace\SlideGeeks.script1\src\test\java\SetupClass\SetupClass.java
-C:\Users\slide53\eclipse-workspace\SlideGeeks.script1\src\test\java\SetupClass\StepDefinition\Email_Sign_up_Correct_Data_2.java
-C:\Users\slide53\eclipse-workspace\SlideGeeks.script1\src\test\java\SetupClass\StepDefinition\Email_Sign_In_Incorrect_Data_6.java
-C:\Users\slide53\eclipse-workspace\SlideGeeks.script1\src\test\java\SetupClass\StepDefinition\Email_Sign_In_Paid_User_5.java
-C:\Users\slide53\eclipse-workspace\SlideGeeks.script1\src\test\java\SetupClass\StepDefinition\Forgot_Password_3.java
-C:\Users\slide53\eclipse-workspace\SlideGeeks.script1\src\test\java\SetupClass\TestRunnner.java
-C:\Users\slide53\eclipse-workspace\SlideGeeks.script1\src\test\java\SetupClass\StepDefinition\Email_Sign_In_Free_User_4.java
-C:\Users\slide53\eclipse-workspace\SlideGeeks.script1\src\test\java\SetupClass\StepDefinition\Email_Sign_Up_Incorrect_Data_1.java
+D:\Selenium Live Projects\SlideGeeks-Checkout\src\test\java\SetupClass\SetupClass.java
+D:\Selenium Live Projects\SlideGeeks-Checkout\src\test\java\SetupClass\StepDefinition\Coupon.java
+D:\Selenium Live Projects\SlideGeeks-Checkout\src\test\java\SetupClass\StepDefinition\Email_Sign_up_Correct_Data_2.java
+D:\Selenium Live Projects\SlideGeeks-Checkout\src\test\java\SetupClass\TestRunnner.java
+D:\Selenium Live Projects\SlideGeeks-Checkout\src\test\java\SetupClass\StepDefinition\TakeImageStep.java
+D:\Selenium Live Projects\SlideGeeks-Checkout\src\test\java\SetupClass\StepDefinition\Paypal_Checkout.java
+D:\Selenium Live Projects\SlideGeeks-Checkout\src\test\java\SetupClass\StepDefinition\Stripe_Checkout.java

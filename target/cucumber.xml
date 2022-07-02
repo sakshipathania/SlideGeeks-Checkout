@@ -1,42 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="343.125161">
-<testcase classname="Sign up with correct data" name="Test Sign up with correct Data" time="123.551027">
-<system-out><![CDATA[Given user is already on Website Home Page ii................................passed
-Then user navigates to sign up page ii.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="2CO Checkout" name="Test 2CO checkout" time="61.731018">
-<system-out><![CDATA[Given user is already on Website Home Page CO...............................passed
-Then user is redirected to pricing page and check the text1 2CO...............................passed
-Then user is redirected to pricing page and check the text2 2CO...............................passed
-Then user is redirected to pricing page and check the text3 2CO...............................passed
-Then user is redirected to pricing page and check the text4 2CO...............................passed
-Then user is redirected to pricing page and check the text5 2CO...............................passed
-Then user is redirected to pricing page and check the text6 2CO...............................passed
-Then user is redirected to pricing page and check the text7 2CO...............................passed
-Then user is redirected to pricing page and check the text8 2CO...............................passed
-Then user is redirected to pricing page and choose a plan to pay 2CO...............................passed
-Then user proceed to pay with 2CO 2CO...............................passed
-Then 2CO page appears and user navigates back to my account 2CO...............................passed
-Then user signout the account 2CO...............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Paypal Checkout" name="Test paypal checkout" time="29.269605">
-<system-out><![CDATA[Given user is already on Website Home Page................................passed
-Then user is redirected to pricing page and check the text1 PP1................................passed
-Then user is redirected to pricing page and check the text2 PP2................................passed
-Then user is redirected to pricing page and check the text3 PP3................................passed
-Then user is redirected to pricing page and check the text4 PP4................................passed
-Then user is redirected to pricing page and check the text5 PP5................................passed
-Then user is redirected to pricing page and check the text6 PP6................................passed
-Then user is redirected to pricing page and check the text7 PP7................................passed
-Then user is redirected to pricing page and check the text8 PP8................................passed
-Then user is redirected to pricing page and choose the plan to pay................................passed
-Then user is redirected checkout page................................passed
-Then user proceed to pay with paypal pp................................passed
-Then paypal popup appears and user navigates back to my account pp................................passed
-Then user Signout account PP................................passed
-]]></system-out>
-</testcase>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="164.408">
+    <testcase classname="Sign up with correct data" name="Test Sign up with correct Data" time="164.15">
+        <failure message="TimedPromise timed out after 60000 ms&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SLIDEQA2', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17056, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 5f2a14c2-c447-4e7b-9514-ee4cdf935b00" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user is already on Website Home Page ii...............................passed
+Then user navigates to sign up page ii......................................failed
 
+StackTrace:
+org.openqa.selenium.TimeoutException: TimedPromise timed out after 60000 ms
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17056, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5f2a14c2-c447-4e7b-9514-ee4cdf935b00
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2.user_navigates_to_sign_up_page_ii(Email_Sign_up_Correct_Data_2.java:94)
+	at ✽.user navigates to sign up page ii(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/2.Email_Sign_up_Correct_data.feature:6)
+]]></failure>
+    </testcase>
 </testsuite>

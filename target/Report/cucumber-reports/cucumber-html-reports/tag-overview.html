@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@Forgot_Password","@Sign_up_Incorrect_data","@Sign_up_correct_data","@free_user_sign_in_via_email","@paid_user_sign_in_via_email","@sign_in_via_email_with_Incorrect_Data"],
+        labels: ["@Sign_up_correct_data"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [100.00, 100.00, 100.00, 100.00, 100.00, 100.00]
+                data: [50.00]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [50.00]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>19 Aug 2019, 16:03</td>
+                        <td>02 Jul 2022, 08:33</td>
           </tr>
         </tbody>
       </table>
@@ -192,125 +192,50 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="Forgot_Password.html">@Forgot_Password</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-        <td class="duration" data-value="29269605100">29s 269ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Sign_up_Incorrect_data.html">@Sign_up_Incorrect_data</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-        <td class="duration" data-value="123551026700">2m 3s 551ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
         <td class="tagname"><a href="Sign_up_correct_data.html">@Sign_up_correct_data</a></td>
         
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
-        <td      class="passed"    >7</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-        <td class="duration" data-value="61731017700">1m 1s 731ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="free_user_sign_in_via_email.html">@free_user_sign_in_via_email</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-        <td class="duration" data-value="44122439600">44s 122ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="paid_user_sign_in_via_email.html">@paid_user_sign_in_via_email</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-        <td class="duration" data-value="51728785900">51s 728ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="sign_in_via_email_with_Incorrect_Data.html">@sign_in_via_email_with_Incorrect_Data</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">4</td>
-        <td class="duration" data-value="32722284700">32s 722ms</td>
-        <td class="passed">Passed</td>
+        <td class="total">2</td>
+        <td class="duration" data-value="163858727900">2m 43s 858ms</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>6</td>
-            <td>6</td>
+      <td>1</td>
+            <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
       <td>0</td>
-      <td>6</td>
-      <td>37</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>37</td>
-      <td class="duration">5m 43s 125ms</td>
+      <td>2</td>
+      <td class="duration">2m 43s 858ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>0.00%</td>
+      <td>100.00%</td>
+      <td></td>
+      <td>50.00%</td>
+      <td>50.00%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
       <td></td>
       <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

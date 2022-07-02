@@ -2,42 +2,37 @@ package SetupClass.StepDefinition;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.JavascriptExecutor;
 
 import SetupClass.SetupClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class Email_Sign_up_Correct_Data_2 extends SetupClass {
-	
-	WebDriverWait wait = new WebDriverWait(driver,50);
-         JavascriptExecutor js = (JavascriptExecutor) driver;
-	
+
+	WebDriverWait wait = new WebDriverWait(driver, 50);
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+
 	@Given("^user is already on Website Home Page ii$")
 	public void user_is_already_on_Website_Home_Page_ii() throws Throwable {
-		//driver.get(AppURL);
+		// driver.get(AppURL);
 		driver.get("https://www.slidegeeks.com");
-		
-		driver.manage().deleteAllCookies();
-		Thread.sleep(4000); 
-		driver.navigate().refresh();
-		Thread.sleep(2000);
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+
+		ClearBrowserCache();
 		log.info("It's opening the website URL");
 		Thread.sleep(1000);
-		
+
 	}
 
 	@Then("^user navigates to sign up page ii$")
 	public void user_navigates_to_sign_up_page_ii() throws Throwable {
-		
+
 		driver.get("https://www.slidegeeks.com/register");
 
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
@@ -112,26 +107,25 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(3000);
 		Join_now.click();
 		Thread.sleep(3000);
-		WebElement Coupon = driver.findElement(By.cssSelector("#discount-checkbox"));
+		js.executeScript("window.scrollBy(0,400)");
+		Thread.sleep(3000);
+		WebElement Coupon = driver.findElement(By.cssSelector("label[for='discount-checkbox']"));
 		Thread.sleep(3000);
 		Coupon.click();
-		Thread.sleep(3000);
-		WebElement Add_Coupon = driver.findElement(By.cssSelector("#hikashop_checkout_coupon_input_1_3"));
+
+		WebElement Add_Coupon = driver.findElement(By.xpath("//input[@id='hikashop_checkout_coupon_input_1_3']"));
 		Thread.sleep(3000);
 		Add_Coupon.sendKeys("5OFF");
 		Thread.sleep(3000);
-		WebElement Apply_Coupon = driver
-				.findElement(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn"));
+		Thread.sleep(3000);
+		WebElement Apply_Coupon = driver.findElement(By.xpath("//button[normalize-space()='APPLY COUPON']"));
 		Thread.sleep(3000);
 		Apply_Coupon.click();
 		Thread.sleep(3000);
-		// Remove Coupon
-		WebElement Remove_Coupon = wait
-				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".hikabtn.hikabtn-primary.hikabtn_checkout_coupon_add.btn.primary-btn")));
+		WebElement Remove_Coupon = driver.findElement(By.xpath("//button[@id='cancel_coupon']")); //
 		Thread.sleep(3000);
 		Remove_Coupon.click();
 		Thread.sleep(3000);
-
 		// Checkout
 		WebElement place_order_btn = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#hikabtn_checkout_next")));
@@ -189,7 +183,6 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		WebElement No_Delete = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div[3]/button[2]"));
 		Thread.sleep(3000);
 		No_Delete.click();
-		Thread.sleep(7000);
 		Thread.sleep(7000);
 
 		String verifyDeleteAccountMessage = wait.until(
