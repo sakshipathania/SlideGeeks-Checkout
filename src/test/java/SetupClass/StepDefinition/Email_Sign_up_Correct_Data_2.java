@@ -160,8 +160,7 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 
 		// Delete Account
 
-		WebElement Account = driver.findElement(
-				By.xpath("/html/body/div[1]/header/div/div/nav/div/div[2]/div[2]/div[2]/div/div[2]/ul/li[1]/a"));
+		WebElement Account = driver.findElement(By.xpath("//a[normalize-space()='Account']"));
 		Thread.sleep(3000);
 		Account.click();
 		Thread.sleep(3000);
