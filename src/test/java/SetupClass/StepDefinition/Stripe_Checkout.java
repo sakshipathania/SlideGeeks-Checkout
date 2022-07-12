@@ -690,41 +690,36 @@ public class Stripe_Checkout extends SetupClass {
 	@Then("^user signout the account (\\d+)CO$")
 	public void user_signout_the_account_CO(int arg1) throws Throwable {
 		Thread.sleep(3000);
-		WebElement Account = driver.findElement(
-				By.xpath("/html/body/div[1]/header/div/div/nav/div/div[2]/div[2]/div[2]/div/div[2]/ul/li[1]/a"));
-		Thread.sleep(2000);
+		WebElement Account = driver.findElement(By.xpath("//a[normalize-space()='Account']//i"));
+		Thread.sleep(3000);
 		Account.click();
-		Thread.sleep(2000);
-		WebElement Delete_Account = driver
-				.findElement(By.xpath("/html/body/div[1]/div[3]/div/div/div/div/div[2]/div/ul/li[6]/a"));
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		WebElement Delete_Account = driver.findElement(By.xpath("//a[normalize-space()='Delete Account']"));
+		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", Delete_Account);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Delete_Account.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement Delete_Account_reason = driver.findElement(By.cssSelector("#only-free-download-product"));
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Delete_Account_reason.click();
-		Thread.sleep(2000);
-		WebElement Delete_Profile = driver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[3]/button[1]"));
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		WebElement Delete_Profile = driver.findElement(By.xpath("//button[@id='delete_profile']"));
+		Thread.sleep(3000);
 		Delete_Profile.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement No_Delete = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div[3]/button[2]"));
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		No_Delete.click();
-		Thread.sleep(4000);
+		Thread.sleep(7000);
 		String verifyDeleteAccountMessage = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
 				.getText();
 		System.out.println("verifyText1 = " + verifyDeleteAccountMessage);
-
 		Assert.assertTrue("Your are not on paypal page",
 				verifyDeleteAccountMessage.contentEquals("Your Account has been deleted successfully."));
-		Thread.sleep(2000);
-		// WebElement Signout = driver.findElement(By.xpath("//a[@href ='/logout']"));
-		// Thread.sleep(3000);
-		// Signout.click();
+		Thread.sleep(3000);
+
 
 	}
 }

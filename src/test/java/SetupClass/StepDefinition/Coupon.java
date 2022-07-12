@@ -128,13 +128,14 @@ public class Coupon extends SetupClass {
 
 	@Then("^user is redirected to pricing page and choose the plan to pay cc$")
 	public void user_is_redirected_to_pricing_page_and_choose_the_plan_to_pay_cc() throws Throwable {
-		// choose a plan
-		WebElement Subscribe_btn = driver.findElement(By.cssSelector(
-				"div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']"));
-		js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
-		Thread.sleep(2000);
-		Subscribe_btn.click();
-		Thread.sleep(6000);
+		// after clicking on login button on popup user should be redirected to the
+		// checkout page
+		/*
+		 * WebElement Subscribe_btn = driver.findElement(By.cssSelector(
+		 * "div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']"
+		 * )); js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
+		 * Thread.sleep(2000); Subscribe_btn.click(); Thread.sleep(6000);
+		 */
 
 	}
 
@@ -242,13 +243,11 @@ public class Coupon extends SetupClass {
 		Thread.sleep(3000);
 		driver.get("https://www.slidegeeks.com/checkout");
 		Thread.sleep(2000);
-		WebElement Account = driver.findElement(
-				By.xpath("/html/body/div[1]/header/div/div/nav/div/div[2]/div[2]/div[2]/div/div[2]/ul/li[1]/a"));
+		WebElement Account = driver.findElement(By.xpath("//a[normalize-space()='Account']//i"));
 		Thread.sleep(3000);
 		Account.click();
 		Thread.sleep(3000);
-		WebElement Delete_Account = driver
-				.findElement(By.xpath("/html/body/div[1]/div[3]/div/div/div/div/div[2]/div/ul/li[6]/a"));
+		WebElement Delete_Account = driver.findElement(By.xpath("//a[normalize-space()='Delete Account']"));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", Delete_Account);
 		Thread.sleep(3000);
@@ -258,7 +257,7 @@ public class Coupon extends SetupClass {
 		Thread.sleep(3000);
 		Delete_Account_reason.click();
 		Thread.sleep(3000);
-		WebElement Delete_Profile = driver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[3]/button[1]"));
+		WebElement Delete_Profile = driver.findElement(By.xpath("//button[@id='delete_profile']"));
 		Thread.sleep(3000);
 		Delete_Profile.click();
 		Thread.sleep(3000);
