@@ -27,7 +27,6 @@ public class SetupClass {
 	public static String local_chrome;
 	public static String local_FFbrowser;
 
-	
 	@BeforeClass
 	public static void before_Class() throws Exception {
 		log = Logger.getLogger(BeforeClass.class.getName());
@@ -73,7 +72,7 @@ public class SetupClass {
 		}
 
 	}
-	
+
 	public static void ClearBrowserCache() throws Throwable {
 
 		driver.manage().deleteAllCookies();
@@ -85,7 +84,7 @@ public class SetupClass {
 	@AfterClass
 	public static void after_Class() throws InterruptedException {
 		Thread.sleep(2000);
-		// driver.quit(); // ->> don't want to close the browser for now
+		driver.quit(); // ->> don't want to close the browser for now
 		Thread.sleep(2000);
 
 	}
