@@ -21,20 +21,23 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 
 	@Given("^user is already on Website Home Page ii$")
 	public void user_is_already_on_Website_Home_Page_ii() throws Throwable {
-		// driver.get(AppURL);
-		driver.get("https://www.slidegeeks.com");
-
+		driver.get(AppURL);
+		Thread.sleep(3000);
 		ClearBrowserCache();
-		log.info("It's opening the website URL");
-		Thread.sleep(1000);
+
+		Thread.sleep(3000);
 
 	}
 
 	@Then("^user navigates to sign up page ii$")
 	public void user_navigates_to_sign_up_page_ii() throws Throwable {
 
-		driver.get("https://www.slidegeeks.com/register");
-
+		WebElement login_signup_btn = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='signupclass']")));
+		Thread.sleep(1000);
+		login_signup_btn.click();
+		Thread.sleep(4000);
+		
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		Thread.sleep(3000);
 		name.sendKeys("Automated Program");
@@ -61,11 +64,13 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(2000);
 
 		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_email")));
+		new_email.clear();
 		Thread.sleep(3000);
 		new_email.sendKeys(full_email);
 		Thread.sleep(3000);
 
 		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password")));
+		password.clear();
 		Thread.sleep(3000);
 		password.sendKeys("Geeks@123");
 		Thread.sleep(3000);
