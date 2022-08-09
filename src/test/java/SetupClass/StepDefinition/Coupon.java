@@ -36,8 +36,9 @@ public class Coupon extends SetupClass {
 				"div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']")));
 
 		Join_now.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
+		System.out.println("user shoud be on login page = " + driver.getCurrentUrl());
 		WebElement signup = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='signupclass']")));
 
 		signup.click();
@@ -126,31 +127,17 @@ public class Coupon extends SetupClass {
 
 	@Then("^user is redirected to pricing page and choose the plan to pay cc$")
 	public void user_is_redirected_to_pricing_page_and_choose_the_plan_to_pay_cc() throws Throwable {
-		// after clicking on login button on popup user should be redirected to the
-		// checkout page
-		/*
-		 * WebElement Subscribe_btn = driver.findElement(By.cssSelector(
-		 * "div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']"
-		 * )); js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
-		 * Thread.sleep(2000); Subscribe_btn.click(); Thread.sleep(6000);
-		 */
 
 	}
 
 	@Then("^user is redirected checkout page cc$")
 	public void user_is_redirected_checkout_page_cc() throws Throwable {
-		Thread.sleep(6000);
-		// WebElement Continue =
-		// driver.findElement(By.xpath("//*[@id='pg-checkout-shipping-info']/div[1]/div/div/div/div[2]/button"));
-		// js.executeScript("arguments[0].scrollIntoView();",Continue);
-		// Thread.sleep(1000);
-		// Continue.click();
+		System.out.println("user shoud be on checkout page = " + driver.getCurrentUrl());
+
 	}
 
 	@Then("^user proceed to pay with paypal pp cc$")
 	public void user_proceed_to_pay_with_paypal_pp_cc() throws Throwable {
-
-		Thread.sleep(7000);
 
 		try {
 			WebElement cp_btn = driver.findElement(By.xpath("//label[@for='payment_radio_1_2__stripe_2']"));
@@ -166,7 +153,7 @@ public class Coupon extends SetupClass {
 		Thread.sleep(3000);
 		WebElement Coupon = driver.findElement(By.cssSelector("label[for='discount-checkbox']"));
 		Thread.sleep(3000);
-		Coupon.click();
+		js.executeScript("arguments[0].click();", Coupon);
 
 		WebElement Add_Coupon = driver.findElement(By.xpath("//input[@id='hikashop_checkout_coupon_input_1_3']"));
 		Thread.sleep(3000);
@@ -178,6 +165,7 @@ public class Coupon extends SetupClass {
 		Apply_Coupon.click();
 		Thread.sleep(3000);
 
+		System.out.println("copon applied");
 		// Remove Coupon
 		WebElement Remove_Coupon = driver.findElement(By.xpath("//button[@id='cancel_coupon']")); //
 		Thread.sleep(3000);
