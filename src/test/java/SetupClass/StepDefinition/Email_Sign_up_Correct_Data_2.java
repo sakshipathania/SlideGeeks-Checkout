@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -37,7 +38,7 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(1000);
 		login_signup_btn.click();
 		Thread.sleep(4000);
-		
+
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		Thread.sleep(3000);
 		name.sendKeys("Automated Program");
@@ -161,6 +162,14 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 				"#root > div > div > div.App-Overview > header > div > div > a > div > div > div.Header-backArrowContainer > svg"));
 		Thread.sleep(2000);
 		Stripe_back.click();
+
+		if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
+			Alert alert = driver.switchTo().alert();
+			System.out.println(alert.getText());
+			alert.accept();
+		} else {
+			System.out.println("Alert exists");
+		}
 		Thread.sleep(5000);
 
 		// Delete Account

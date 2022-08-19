@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -672,11 +673,19 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(2000);
 		Stripe_back1.click();
 
+		if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
+			Alert alert = driver.switchTo().alert();
+			System.out.println(alert.getText());
+			alert.accept();
+		} else {
+			System.out.println("Alert not exists");
+		}
+
 	}
 
 	@Then("^user signout the account (\\d+)CO$")
 	public void user_signout_the_account_CO(int arg1) throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		WebElement Account = driver.findElement(By.xpath("//a[normalize-space()='Account']//i"));
 		Thread.sleep(3000);
 		Account.click();
