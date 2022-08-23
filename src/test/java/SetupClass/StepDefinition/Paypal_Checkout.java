@@ -365,7 +365,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 		// wait.implictywait(driver);
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 
 	}
 
@@ -520,7 +520,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 		// wait.implictywait(driver);
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 
 	}
 
@@ -617,8 +617,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 		// wait.implictywait(driver);
-		Thread.sleep(5000);
-
+		
 	}
 
 	@Then("^user is redirected to pricing page and choose the plan to pay$")
@@ -638,13 +637,12 @@ public class Paypal_Checkout extends SetupClass {
 		js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
 		Thread.sleep(2000);
 		Subscribe_btn.click();
-		Thread.sleep(6000);
 
 	}
 
 	@Then("^user is redirected checkout page$")
 	public void user_is_redirected_checkout_page() throws Throwable {
-		Thread.sleep(6000);
+	
 		// WebElement Continue =
 		// driver.findElement(By.xpath("//*[@id='pg-checkout-shipping-info']/div[1]/div/div/div/div[2]/button"));
 		// js.executeScript("arguments[0].scrollIntoView();",Continue);
@@ -655,7 +653,7 @@ public class Paypal_Checkout extends SetupClass {
 	@Then("^user proceed to pay with paypal pp$")
 	public void user_proceed_to_pay_with_paypal_pp() throws Throwable {
 
-		Thread.sleep(7000);
+		Thread.sleep(5000);
 
 		try {
 			WebElement cp_btn = driver.findElement(By.xpath("//label[@for='payment_radio_1_2__paypal_1']"));

@@ -168,7 +168,7 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		 * driver.switchTo().alert(); System.out.println(alert.getText());
 		 * alert.accept(); } else { System.out.println("Alert exists"); }
 		 */
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 
 		// Delete Account
 
