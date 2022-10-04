@@ -33,7 +33,8 @@ public class Paypal_Checkout extends SetupClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='signupclass']")));
 		Thread.sleep(1000);
 		login_signup_btn.click();
-
+		driver.get("https://www.slidegeeks.com/register?173=058");
+		Thread.sleep(3000);
 		Thread.sleep(4000);
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		name.clear();

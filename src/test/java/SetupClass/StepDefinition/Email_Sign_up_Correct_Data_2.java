@@ -38,7 +38,8 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(1000);
 		login_signup_btn.click();
 		Thread.sleep(4000);
-
+		driver.get("https://www.slidegeeks.com/register?170=958");
+		Thread.sleep(3000);
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		Thread.sleep(3000);
 		name.sendKeys("Automated Program");

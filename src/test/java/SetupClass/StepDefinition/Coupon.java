@@ -42,8 +42,9 @@ public class Coupon extends SetupClass {
 		WebElement signup = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='signupclass']")));
 
 		signup.click();
-		Thread.sleep(4000);
-
+		Thread.sleep(3000);
+		driver.get("https://www.slidegeeks.com/register?113=958");
+		Thread.sleep(3000);
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		Thread.sleep(3000);
 		name.sendKeys("Automated Program");
@@ -96,30 +97,25 @@ public class Coupon extends SetupClass {
 
 		WebElement new_email = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_email")));
 		new_email.clear();
-		Thread.sleep(3000);
 		new_email.sendKeys(full_email);
 		Thread.sleep(3000);
 
 		WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password")));
 		password.clear();
-		Thread.sleep(3000);
 		password.sendKeys("Geeks@123");
 		Thread.sleep(3000);
 
 		WebElement confirm_passwoed = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_password2")));
-		Thread.sleep(3000);
 		confirm_passwoed.sendKeys("Geeks@123");
 		Thread.sleep(3000);
 
 		WebElement captcha = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#captchtext")));
-		Thread.sleep(3000);
 		captcha.sendKeys("Y3Tt6bfwI");
 		Thread.sleep(3000);
 
 		WebElement register_btn = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".pg-register-button-new")));
-		Thread.sleep(3000);
 		register_btn.click();
 		Thread.sleep(5000);
 
@@ -159,7 +155,6 @@ public class Coupon extends SetupClass {
 		Thread.sleep(3000);
 		Add_Coupon.sendKeys("5OFF");
 		Thread.sleep(3000);
-		Thread.sleep(3000);
 		WebElement Apply_Coupon = driver.findElement(By.xpath("//button[normalize-space()='APPLY COUPON']"));
 		Thread.sleep(3000);
 		Apply_Coupon.click();
@@ -179,7 +174,6 @@ public class Coupon extends SetupClass {
 		Thread.sleep(3000);
 		Add_Coupon1.sendKeys("5OFF");
 		Thread.sleep(3000); //
-		Thread.sleep(3000);
 		WebElement Apply_Coupon1 = driver.findElement(By.xpath("//button[normalize-space()='APPLY COUPON']"));
 		Thread.sleep(3000);
 		Apply_Coupon1.click();

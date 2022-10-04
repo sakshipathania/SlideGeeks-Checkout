@@ -1,4 +1,4 @@
-# Created at 2022-07-13T14:16:36.495
+# Created at 2022-09-27T12:07:41.110
 Boot Manifest-JAR contains absolute paths in classpath 'D:\Selenium Live Projects\SlideGeeks-Checkout\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 
