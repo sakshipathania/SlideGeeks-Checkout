@@ -43,8 +43,9 @@ public class Coupon extends SetupClass {
 
 		signup.click();
 		Thread.sleep(3000);
-		driver.get("https://www.slidegeeks.com/register&113=958");
+		driver.get("https://www.slidegeeks.com/register?checkout=1&74.44");	
 		Thread.sleep(3000);
+		
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		Thread.sleep(3000);
 		name.sendKeys("Automated Program");
