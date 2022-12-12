@@ -620,7 +620,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 		// wait.implictywait(driver);
-		
+
 	}
 
 	@Then("^user is redirected to pricing page and choose the plan to pay$")
@@ -636,7 +636,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(4000);
 		// js.executeScript("window.scrollBy(0,1000)");
 		WebElement Subscribe_btn = driver.findElement(By.xpath(
-				"//div[@id='Business']//div[@class='col-box table-col item education_call last']//span[contains(text(),'Join now')]"));
+				"//div[@id='Business']//form[@name='hikashop_product_form_389635_hikashop_category_information_menu_117']//span[contains(text(),'Join now')]"));
 		js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
 		Thread.sleep(2000);
 		Subscribe_btn.click();
@@ -645,7 +645,7 @@ public class Paypal_Checkout extends SetupClass {
 
 	@Then("^user is redirected checkout page$")
 	public void user_is_redirected_checkout_page() throws Throwable {
-	
+
 		// WebElement Continue =
 		// driver.findElement(By.xpath("//*[@id='pg-checkout-shipping-info']/div[1]/div/div/div/div[2]/button"));
 		// js.executeScript("arguments[0].scrollIntoView();",Continue);

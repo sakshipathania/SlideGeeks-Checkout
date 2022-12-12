@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>27 Sep 2022, 12:23</td>
+                        <td>12 Dec 2022, 10:57</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Sign_up_correct_data</td>
-                    <td  class="passed"    >1</td>
-          <td >0</td>
+                    <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >2</td>
-          <td >0</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">2</td>
-          <td class="duration" data-value="203776823200">3m 23s 776ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="56414879000">56s 414ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -161,9 +161,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Test Sign up with correct Data</span>
   
@@ -174,15 +174,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -192,14 +192,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user is already on Website Home Page ii</span>
   
-  <span class="lead-duration duration">15s 856ms</span>
+  <span class="lead-duration duration">15s 459ms</span>
 
   </div>
 
@@ -216,15 +216,48 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Then</span>
   <span class="name">user navigates to sign up page ii</span>
   
-  <span class="lead-duration duration">3m 7s 920ms</span>
+  <span class="lead-duration duration">40s 955ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Error message</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" class="pg-register-button-new hvr-rectangle-out btn-download" title="Sign_up" value="SIGN UP"> is not clickable at point (368, 570). Other element would receive the click: <iframe title="recaptcha challenge expires in two minutes" src="https://www.google.com/recaptcha/api2/bframe?hl=en-GB&amp;v=pn3ro1xnhf4yB8qmnrhh9iD2&amp;k=6LfZRBcUAAAAAOMqjVtlO2x1n1BgZSeGnu8a7BAK" name="c-7a31v5bxkby8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 400px; height: 580px;"></iframe>
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2.user_navigates_to_sign_up_page_ii(Email_Sign_up_Correct_Data_2.java:96)
+	at ✽.user navigates to sign up page ii(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/2.Email_Sign_up_Correct_data.feature:6)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -241,7 +274,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -253,13 +286,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-3" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">SetupClass.StepDefinition.TakeImageStep.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">002ms</span>
+  <span class="lead-duration duration">518ms</span>
 
           </div>
 
@@ -267,6 +300,17 @@ $(document).ready(function() {
 
           
           
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_795186215" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_795186215.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_795186215" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_795186215.png"></span>
+    </div>
+  </div>
+        </div>
 
         </div>
           </div>

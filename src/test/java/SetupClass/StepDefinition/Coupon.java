@@ -32,8 +32,8 @@ public class Coupon extends SetupClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Pricing']")));
 		pricing.click();
 		Thread.sleep(2000);
-		WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
-				"div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']")));
+		WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//div[@id = 'Individual']/div[1]/div[2]/div[3]/span[1]/form[1]/a[1]/span[1]")));
 
 		Join_now.click();
 		Thread.sleep(3000);
@@ -43,9 +43,9 @@ public class Coupon extends SetupClass {
 
 		signup.click();
 		Thread.sleep(3000);
-		driver.get("https://www.slidegeeks.com/register?checkout=1&74.44");	
+		driver.get("https://www.slidegeeks.com/register?checkout=1&74.44");
 		Thread.sleep(3000);
-		
+
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		Thread.sleep(3000);
 		name.sendKeys("Automated Program");
@@ -188,18 +188,12 @@ public class Coupon extends SetupClass {
 		String actual = Value_after_coupon.getText();
 		System.out.println("after coupon applied price is = " + actual);
 
-		Assert.assertTrue("Price does not matched", actual.contentEquals("$47.49"));
-
-		if (expected.equals(actual)) {
-			System.out.println("Coupon applied Successfully");
-		} else {
-			System.out.println("Coupon Error");
-		}
+		Assert.assertTrue("Price does not matched", actual.equals("$47.49"));
 
 		Thread.sleep(1000);
 		try {
 
-			WebElement place_order_btn = driver.findElement(By.cssSelector("#hikabtn_checkout_next"));
+			WebElement place_order_btn = driver.findElement(By.xpath("//button[@id='hikabtn_checkout_next']"));
 			Thread.sleep(2000);
 			js.executeScript("arguments[0].scrollIntoView();", place_order_btn);
 			// js.executeScript("arguments[0].click();", place_order_btn);

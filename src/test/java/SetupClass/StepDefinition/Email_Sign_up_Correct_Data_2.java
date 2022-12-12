@@ -111,8 +111,8 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		// Apply Coupon
 		driver.get("https://www.slidegeeks.com/subscriptions");
 		Thread.sleep(4000);
-		WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
-				"div[id='Individual'] form[name='hikashop_product_form_205548_hikashop_category_information_menu_117']")));
+		WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//div[@id = 'Individual']/div[1]/div[2]/div[3]/span[1]/form[1]/a[1]/span[1]")));
 		Thread.sleep(3000);
 		Join_now.click();
 		Thread.sleep(3000);
@@ -137,7 +137,7 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(3000);
 		// Checkout
 		WebElement place_order_btn = wait
-				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#hikabtn_checkout_next")));
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='hikabtn_checkout_next']")));
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();", place_order_btn);
 		// js.executeScript("arguments[0].click();", place_order_btn);
@@ -149,17 +149,9 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(3000);
 		System.out.println("Title of the Page is --> " + stripe_page_title);
 
-		// String page_title="https://checkout.stripe.com/";
 		String page_title = "SlideTeam Geeks Inc";
 
-		if (page_title.equalsIgnoreCase(stripe_page_title)) {
-			System.out.println(" user is on the Stripe page");
-			log.info("USER IS ON THE STRIPE PAGE");
-		} else {
-			System.out.println("user is on the wrong page");
-			log.info("USER IS ON THE WRONG PAGE");
-		}
-
+		Assert.assertEquals("Title does not match", stripe_page_title, page_title);
 		Thread.sleep(3000);
 		WebElement Stripe_back = driver.findElement(By.cssSelector(
 				"#root > div > div > div.App-Overview > header > div > div > a > div > div > div.Header-backArrowContainer > svg"));

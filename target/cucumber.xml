@@ -1,82 +1,167 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="931.044">
-    <testcase classname="Sign up with correct data" name="Test Sign up with correct Data" time="203.906">
-        <system-out><![CDATA[Given user is already on Website Home Page ii...............................passed
-Then user navigates to sign up page ii......................................passed
-]]></system-out>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="90.193">
+    <testcase classname="Sign up with correct data" name="Test Sign up with correct Data" time="57.098">
+        <failure message="element click intercepted: Element &lt;input type=&quot;submit&quot; class=&quot;pg-register-button-new hvr-rectangle-out btn-download&quot; title=&quot;Sign_up&quot; value=&quot;SIGN UP&quot;&gt; is not clickable at point (368, 570). Other element would receive the click: &lt;iframe title=&quot;recaptcha challenge expires in two minutes&quot; src=&quot;https://www.google.com/recaptcha/api2/bframe?hl=en-GB&amp;amp;v=pn3ro1xnhf4yB8qmnrhh9iD2&amp;amp;k=6LfZRBcUAAAAAOMqjVtlO2x1n1BgZSeGnu8a7BAK&quot; name=&quot;c-7a31v5bxkby8&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; sandbox=&quot;allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox&quot; style=&quot;width: 400px; height: 580px;&quot;&gt;&lt;/iframe&gt;&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given user is already on Website Home Page ii...............................passed
+Then user navigates to sign up page ii......................................failed
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" class="pg-register-button-new hvr-rectangle-out btn-download" title="Sign_up" value="SIGN UP"> is not clickable at point (368, 570). Other element would receive the click: <iframe title="recaptcha challenge expires in two minutes" src="https://www.google.com/recaptcha/api2/bframe?hl=en-GB&amp;v=pn3ro1xnhf4yB8qmnrhh9iD2&amp;k=6LfZRBcUAAAAAOMqjVtlO2x1n1BgZSeGnu8a7BAK" name="c-7a31v5bxkby8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 400px; height: 580px;"></iframe>
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2.user_navigates_to_sign_up_page_ii(Email_Sign_up_Correct_Data_2.java:96)
+	at ✽.user navigates to sign up page ii(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/2.Email_Sign_up_Correct_data.feature:6)
+]]></failure>
     </testcase>
-    <testcase classname="Coupon" name="Coupon" time="181.175">
-        <system-out><![CDATA[Given user is already on Website Home Page cc...............................passed
-Then user is redirected to pricing page and choose the plan to pay cc.......passed
-Then user is redirected checkout page cc....................................passed
-Then user proceed to pay with paypal pp cc..................................passed
-Then paypal popup appears and user navigates back to my account pp cc.......passed
-Then user Signout account PP cc.............................................passed
-]]></system-out>
+    <testcase classname="Coupon" name="Coupon" time="32.514">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given user is already on Website Home Page cc...............................failed
+Then user is redirected to pricing page and choose the plan to pay cc.......skipped
+Then user is redirected checkout page cc....................................skipped
+Then user proceed to pay with paypal pp cc..................................skipped
+Then paypal popup appears and user navigates back to my account pp cc.......skipped
+Then user Signout account PP cc.............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at SetupClass.StepDefinition.Coupon.user_is_already_on_Website_Home_Page_cc(Coupon.java:51)
+	at ✽.user is already on Website Home Page cc(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Coupon.feature:5)
+]]></failure>
     </testcase>
-    <testcase classname="Paypal Checkout" name="Test paypal checkout" time="316.744">
-        <system-out><![CDATA[Given user is already on Website Home Page..................................passed
-Then user is redirected to pricing page and check the text1 PP1.............passed
-Then user is redirected to pricing page and check the text2 PP2.............passed
-Then user is redirected to pricing page and check the text3 PP3.............passed
-Then user is redirected to pricing page and check the text4 PP4.............passed
-Then user is redirected to pricing page and check the text5 PP5.............passed
-Then user is redirected to pricing page and check the text6 PP6.............passed
-Then user is redirected to pricing page and check the text7 PP7.............passed
-Then user is redirected to pricing page and check the text8 PP8.............passed
-Then user is redirected to pricing page and check the text9 PP9.............passed
-Then user is redirected to pricing page and check the text10 PP0............passed
-Then user is redirected to pricing page and check the text11 PP0............passed
-Then user is redirected to pricing page and check the text12 PP0............passed
-Then user is redirected to pricing page and check the text13 PP0............passed
-Then user is redirected to pricing page and check the text14 PP0............passed
-Then user is redirected to pricing page and check the text15 PP0............passed
-Then user is redirected to pricing page and check the text16 PP0............passed
-Then user is redirected to pricing page and check the text17 PP0............passed
-Then user is redirected to pricing page and check the text18 PP0............passed
-Then user is redirected to pricing page and choose the plan to pay..........passed
-Then user is redirected checkout page.......................................passed
-Then user proceed to pay with paypal pp.....................................passed
-Then paypal popup appears and user navigates back to my account pp..........passed
-Then user Signout account PP................................................passed
-]]></system-out>
+    <testcase classname="Paypal Checkout" name="Test paypal checkout" time="0.025">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given user is already on Website Home Page..................................failed
+Then user is redirected to pricing page and check the text1 PP1.............skipped
+Then user is redirected to pricing page and check the text2 PP2.............skipped
+Then user is redirected to pricing page and check the text3 PP3.............skipped
+Then user is redirected to pricing page and check the text4 PP4.............skipped
+Then user is redirected to pricing page and check the text5 PP5.............skipped
+Then user is redirected to pricing page and check the text6 PP6.............skipped
+Then user is redirected to pricing page and check the text7 PP7.............skipped
+Then user is redirected to pricing page and check the text8 PP8.............skipped
+Then user is redirected to pricing page and check the text9 PP9.............skipped
+Then user is redirected to pricing page and check the text10 PP0............skipped
+Then user is redirected to pricing page and check the text11 PP0............skipped
+Then user is redirected to pricing page and check the text12 PP0............skipped
+Then user is redirected to pricing page and check the text13 PP0............skipped
+Then user is redirected to pricing page and check the text14 PP0............skipped
+Then user is redirected to pricing page and check the text15 PP0............skipped
+Then user is redirected to pricing page and check the text16 PP0............skipped
+Then user is redirected to pricing page and check the text17 PP0............skipped
+Then user is redirected to pricing page and check the text18 PP0............skipped
+Then user is redirected to pricing page and choose the plan to pay..........skipped
+Then user is redirected checkout page.......................................skipped
+Then user proceed to pay with paypal pp.....................................skipped
+Then paypal popup appears and user navigates back to my account pp..........skipped
+Then user Signout account PP................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at SetupClass.StepDefinition.Paypal_Checkout.user_is_already_on_Website_Home_Page(Paypal_Checkout.java:27)
+	at ✽.user is already on Website Home Page(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Paypal_Checkout.feature:5)
+]]></failure>
     </testcase>
-    <testcase classname="Stripe Checkout" name="Test Stripe checkout" time="228.565">
-        <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='ProductSummary-name Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500'] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SLIDEQA2', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: bf237531b2d6672ca31ca6f3e65df37e" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user is already on Website Home Page CO...............................passed
-Then user is redirected to pricing page and check the text1 2CO.............passed
-Then user is redirected to pricing page and check the text2 2CO.............passed
-Then user is redirected to pricing page and check the text3 2CO.............passed
-Then user is redirected to pricing page and check the text4 2CO.............passed
-Then user is redirected to pricing page and check the text5 2CO.............passed
-Then user is redirected to pricing page and check the text6 2CO.............passed
-Then user is redirected to pricing page and check the text7 2CO.............passed
-Then user is redirected to pricing page and check the text8 2CO.............passed
-Then user is redirected to pricing page and check the text9 2CO.............passed
-Then user is redirected to pricing page and check the text10 2CO............passed
-Then user is redirected to pricing page and check the text11 2CO............passed
-Then user is redirected to pricing page and check the text12 2CO............passed
-Then user is redirected to pricing page and check the text13 2CO............passed
-Then user is redirected to pricing page and check the text14 2CO............passed
-Then user is redirected to pricing page and check the text15 2CO............passed
-Then user is redirected to pricing page and check the text16 2CO............passed
-Then user is redirected to pricing page and check the text17 2CO............passed
-Then user is redirected to pricing page and check the text18 2CO............passed
-Then user is redirected to pricing page and choose a plan to pay 2CO........passed
-Then user proceed to pay with 2CO 2CO.......................................passed
-Then CO page appears and user navigates back to my account 2CO..............failed
+    <testcase classname="Stripe Checkout" name="Test Stripe checkout" time="0.017">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given user is already on Website Home Page CO...............................failed
+Then user is redirected to pricing page and check the text1 2CO.............skipped
+Then user is redirected to pricing page and check the text2 2CO.............skipped
+Then user is redirected to pricing page and check the text3 2CO.............skipped
+Then user is redirected to pricing page and check the text4 2CO.............skipped
+Then user is redirected to pricing page and check the text5 2CO.............skipped
+Then user is redirected to pricing page and check the text6 2CO.............skipped
+Then user is redirected to pricing page and check the text7 2CO.............skipped
+Then user is redirected to pricing page and check the text8 2CO.............skipped
+Then user is redirected to pricing page and check the text9 2CO.............skipped
+Then user is redirected to pricing page and check the text10 2CO............skipped
+Then user is redirected to pricing page and check the text11 2CO............skipped
+Then user is redirected to pricing page and check the text12 2CO............skipped
+Then user is redirected to pricing page and check the text13 2CO............skipped
+Then user is redirected to pricing page and check the text14 2CO............skipped
+Then user is redirected to pricing page and check the text15 2CO............skipped
+Then user is redirected to pricing page and check the text16 2CO............skipped
+Then user is redirected to pricing page and check the text17 2CO............skipped
+Then user is redirected to pricing page and check the text18 2CO............skipped
+Then user is redirected to pricing page and choose a plan to pay 2CO........skipped
+Then user proceed to pay with 2CO 2CO.......................................skipped
+Then CO page appears and user navigates back to my account 2CO..............skipped
 Then user signout the account 2CO...........................................skipped
 
 StackTrace:
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='ProductSummary-name Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500'] (tried for 50 second(s) with 500 milliseconds interval)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SLIDEQA2', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf237531b2d6672ca31ca6f3e65df37e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at SetupClass.StepDefinition.Stripe_Checkout.CO_page_appears_and_user_navigates_back_to_my_account_CO(Stripe_Checkout.java:656)
-	at ✽.CO page appears and user navigates back to my account 2CO(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Stripe_Checkout.feature:26)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at SetupClass.StepDefinition.Stripe_Checkout.user_is_already_on_Website_Home_Page_CO(Stripe_Checkout.java:26)
+	at ✽.user is already on Website Home Page CO(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Stripe_Checkout.feature:5)
 ]]></failure>
     </testcase>
 </testsuite>

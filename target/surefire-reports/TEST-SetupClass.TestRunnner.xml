@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="SetupClass.TestRunnner" time="941.34" tests="4" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="SetupClass.TestRunnner" time="98.604" tests="7" errors="7" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\SLIDE QA\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire1279468201301074944\surefirebooter14144002540982591454.jar C:\Users\SLIDE QA\AppData\Local\Temp\surefire1279468201301074944 2022-09-27T12-07-40_681-jvmRun1 surefire694671999264906307tmp surefire_012904286060954225798tmp"/>
+    <property name="sun.java.command" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire488120453076055235\surefirebooter795998685451510252.jar C:\Users\SLIDE QA\AppData\Local\Temp\surefire488120453076055235 2022-12-12T10-56-01_217-jvmRun1 surefire15881103204335482394tmp surefire_08042623302810679683tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Selenium Live Projects\SlideGeeks-Checkout\target\test-classes;D:\Selenium Live Projects\SlideGeeks-Checkout\target\classes;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SLIDE QA\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\SLIDE QA\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\SLIDE QA\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\SLIDE QA\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\SLIDE QA\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\SLIDE QA\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\SLIDE QA\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-java\6.10.2\cucumber-java-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-junit\6.10.2\cucumber-junit-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\SLIDE QA\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\SLIDE QA\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\SLIDE QA\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.0\maven-compiler-plugin-3.8.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\SLIDE QA\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\SLIDE QA\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\SLIDE QA\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\SLIDE QA\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.0\webdrivermanager-5.1.0.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\SLIDE QA\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\SLIDE QA\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\SLIDE QA\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\SLIDE QA\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\SLIDE QA\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\slf4j-simple\1.7.25\slf4j-simple-1.7.25.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire1279468201301074944\surefirebooter14144002540982591454.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire488120453076055235\surefirebooter795998685451510252.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17+35"/>
@@ -50,14 +50,23 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\SLIDE QA\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin/server;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.8.3\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\SLIDE QA\AppData\Local\Microsoft\WindowsApps;;C:\Windows\System32;;."/>
+    <property name="java.library.path" value="C:\Users\SLIDE QA\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin/server;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.8.3\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\SLIDE QA\AppData\Local\Microsoft\WindowsApps;;C:\Windows\system32;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="java.vm.version" value="17+35"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Test Sign up with correct Data" classname="Sign up with correct data" time="204.326">
+  <testcase name="Test Sign up with correct Data" classname="Sign up with correct data" time="57.446">
+    <error message="element click intercepted: Element &lt;input type=&quot;submit&quot; class=&quot;pg-register-button-new hvr-rectangle-out btn-download&quot; title=&quot;Sign_up&quot; value=&quot;SIGN UP&quot;&gt; is not clickable at point (368, 570). Other element would receive the click: &lt;iframe title=&quot;recaptcha challenge expires in two minutes&quot; src=&quot;https://www.google.com/recaptcha/api2/bframe?hl=en-GB&amp;amp;v=pn3ro1xnhf4yB8qmnrhh9iD2&amp;amp;k=6LfZRBcUAAAAAOMqjVtlO2x1n1BgZSeGnu8a7BAK&quot; name=&quot;c-7a31v5bxkby8&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; sandbox=&quot;allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox&quot; style=&quot;width: 400px; height: 580px;&quot;&gt;&lt;/iframe&gt;&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="submit" class="pg-register-button-new hvr-rectangle-out btn-download" title="Sign_up" value="SIGN UP"> is not clickable at point (368, 570). Other element would receive the click: <iframe title="recaptcha challenge expires in two minutes" src="https://www.google.com/recaptcha/api2/bframe?hl=en-GB&amp;v=pn3ro1xnhf4yB8qmnrhh9iD2&amp;k=6LfZRBcUAAAAAOMqjVtlO2x1n1BgZSeGnu8a7BAK" name="c-7a31v5bxkby8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 400px; height: 580px;"></iframe>
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+]]></error>
     <system-out><![CDATA[Bname=====https://www.slidegeeks.com
 config browser = chrome
 setProperty browser = chrome
@@ -65,153 +74,357 @@ setProperty browser = chrome
 @Sign_up_correct_data
 Scenario: Test Sign up with correct Data        &amp#27;[90m# src/test/java/Features/2.Email_Sign_up_Correct_data.feature:3&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is already on Website Home Page ii&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2.user_is_already_on_Website_Home_Page_ii()&amp#27;[0m
-nueocelkls
-selenium.testing.nueocelkls@gmail.com
-Title of the Page is --> SlideTeam Geeks Inc
- user is on the Stripe page
-verifyText1 = Your Account has been deleted successfully.
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser navigates to sign up page ii&amp#27;[0m        &amp#27;[90m# SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2.user_navigates_to_sign_up_page_ii()&amp#27;[0m
+irzqedlmwx
+selenium.testing.irzqedlmwx@gmail.com
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31muser navigates to sign up page ii&amp#27;[0m        &amp#27;[90m# SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2.user_navigates_to_sign_up_page_ii()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" class="pg-register-button-new hvr-rectangle-out btn-download" title="Sign_up" value="SIGN UP"> is not clickable at point (368, 570). Other element would receive the click: <iframe title="recaptcha challenge expires in two minutes" src="https://www.google.com/recaptcha/api2/bframe?hl=en-GB&amp;v=pn3ro1xnhf4yB8qmnrhh9iD2&amp;k=6LfZRBcUAAAAAOMqjVtlO2x1n1BgZSeGnu8a7BAK" name="c-7a31v5bxkby8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 400px; height: 580px;"></iframe>
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2.user_navigates_to_sign_up_page_ii(Email_Sign_up_Correct_Data_2.java:96)
+	at âœ½.user navigates to sign up page ii(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/2.Email_Sign_up_Correct_data.feature:6)
+&amp#27;[0m
+
+    Embedding screenshotName [image/png 482588 bytes]
+
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 105.0.5195.52 (resolved driver for Chrome 105)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SLIDE QA\.cache\selenium\chromedriver\win32\105.0.5195.52\chromedriver.exe
-Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 7494
+    <system-err><![CDATA[Dec 12, 2022 10:56:02 AM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./target/test-classes/Features/2.Email_Sign_up_Correct_data.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/2.Email_Sign_up_Correct_data.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Dec 12, 2022 10:56:02 AM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./target/test-classes/Features/Coupon.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Coupon.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Dec 12, 2022 10:56:02 AM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./target/test-classes/Features/Paypal_Checkout.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Paypal_Checkout.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Dec 12, 2022 10:56:02 AM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./target/test-classes/Features/Stripe_Checkout.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Stripe_Checkout.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SLIDE QA\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 27677
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 27, 2022 12:07:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Dec 12, 2022 10:56:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Sep 27, 2022 12:09:56 PM SetupClass.StepDefinition.Email_Sign_up_Correct_Data_2 user_navigates_to_sign_up_page_ii
-INFO: USER IS ON THE STRIPE PAGE
 ]]></system-err>
   </testcase>
-  <testcase name="Coupon" classname="Coupon" time="181.19">
+  <testcase name="Coupon" classname="Coupon" time="32.535">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+]]></error>
     <system-out><![CDATA[
 @Coupon
 Scenario: Coupon                                                        &amp#27;[90m# src/test/java/Features/Coupon.feature:3&amp#27;[0m
 user shoud be on login page = https://www.slidegeeks.com/checkout
-mmvzbzbbag
-selenium.testing.mmvzbzbbag@gmail.com
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is already on Website Home Page cc&amp#27;[0m                         &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_is_already_on_Website_Home_Page_cc()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and choose the plan to pay cc&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_is_redirected_to_pricing_page_and_choose_the_plan_to_pay_cc()&amp#27;[0m
-user shoud be on checkout page = https://www.slidegeeks.com/checkout
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected checkout page cc&amp#27;[0m                              &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_is_redirected_checkout_page_cc()&amp#27;[0m
-copon applied
-after coupon applied price is = $47.49
-Coupon applied Successfully
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser proceed to pay with paypal pp cc&amp#27;[0m                            &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_proceed_to_pay_with_paypal_pp_cc()&amp#27;[0m
-Title of the Page is --> SlideTeam Geeks Inc
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mpaypal popup appears and user navigates back to my account pp cc&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Coupon.paypal_popup_appears_and_user_navigates_back_to_my_account_pp_cc()&amp#27;[0m
-verifyText1 = Your Account has been deleted successfully.
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser Signout account PP cc&amp#27;[0m                                       &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_Signout_account_PP_cc()&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31muser is already on Website Home Page cc&amp#27;[0m                         &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_is_already_on_Website_Home_Page_cc()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at SetupClass.StepDefinition.Coupon.user_is_already_on_Website_Home_Page_cc(Coupon.java:51)
+	at âœ½.user is already on Website Home Page cc(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Coupon.feature:5)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and choose the plan to pay cc&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_is_redirected_to_pricing_page_and_choose_the_plan_to_pay_cc()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected checkout page cc&amp#27;[0m                              &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_is_redirected_checkout_page_cc()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser proceed to pay with paypal pp cc&amp#27;[0m                            &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_proceed_to_pay_with_paypal_pp_cc()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mpaypal popup appears and user navigates back to my account pp cc&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Coupon.paypal_popup_appears_and_user_navigates_back_to_my_account_pp_cc()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser Signout account PP cc&amp#27;[0m                                       &amp#27;[90m# SetupClass.StepDefinition.Coupon.user_Signout_account_PP_cc()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at SetupClass.StepDefinition.TakeImageStep.tearDown(TakeImageStep.java:20)
+&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Test paypal checkout" classname="Paypal Checkout" time="316.788">
+  <testcase name="Coupon" classname="Coupon" time="32.535">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+]]></error>
+  </testcase>
+  <testcase name="Test paypal checkout" classname="Paypal Checkout" time="0.049">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+]]></error>
     <system-out><![CDATA[
 @Paypal_Checkout
 Scenario: Test paypal checkout                                       &amp#27;[90m# src/test/java/Features/Paypal_Checkout.feature:3&amp#27;[0m
-odimpdsogq
-selenium.testing.odimpdsogq@gmail.com
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is already on Website Home Page&amp#27;[0m                         &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_already_on_Website_Home_Page()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text1 PP1&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text1_PP1()&amp#27;[0m
-monthlyPrice  = $49.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text2 PP2&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text2_PP2()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text3 PP3&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text3_PP3()&amp#27;[0m
-semiAnnual  = $149.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text4 PP4&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text4_PP4()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text5 PP5&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text5_PP5()&amp#27;[0m
-Annual  = $249.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text6 PP6&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text6_PP6()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text7 PP7&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text7_PP7()&amp#27;[0m
-annualCustom  = $299.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text8 PP8&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text8_PP8()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text9 PP9&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text9_PP9()&amp#27;[0m
-Annual_4_User_License  = $599.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text10 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text10_PP0()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text11 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text11_PP0()&amp#27;[0m
-Annual_20_User_License = $1,599.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text12 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text12_PP0()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text13 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text13_PP0()&amp#27;[0m
-Annual_Company_Wide_Unlimited_User_License = $2,999.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text14 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text14_PP0()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text15 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text15_PP0()&amp#27;[0m
-Annual_15_User_Education_License = $999.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text16 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text16_PP0()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text17 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text17_PP0()&amp#27;[0m
-Annual_UNLIMITED_User_Institute_Wide_License = $1,999.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text18 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text18_PP0()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and choose the plan to pay&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_choose_the_plan_to_pay()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected checkout page&amp#27;[0m                              &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_checkout_page()&amp#27;[0m
-actual = $2,849.99
-Coupon Error
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser proceed to pay with paypal pp&amp#27;[0m                            &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_proceed_to_pay_with_paypal_pp()&amp#27;[0m
-user is on mainWindow ------CDwindow-4ABC1E60676A8B4E537EDF35404DEFF2
-set size = 1
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mpaypal popup appears and user navigates back to my account pp&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.paypal_popup_appears_and_user_navigates_back_to_my_account_pp()&amp#27;[0m
-verifyText1 = Your Account has been deleted successfully.
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser Signout account PP&amp#27;[0m                                       &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_Signout_account_PP()&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31muser is already on Website Home Page&amp#27;[0m                         &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_already_on_Website_Home_Page()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at SetupClass.StepDefinition.Paypal_Checkout.user_is_already_on_Website_Home_Page(Paypal_Checkout.java:27)
+	at âœ½.user is already on Website Home Page(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Paypal_Checkout.feature:5)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text1 PP1&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text1_PP1()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text2 PP2&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text2_PP2()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text3 PP3&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text3_PP3()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text4 PP4&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text4_PP4()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text5 PP5&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text5_PP5()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text6 PP6&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text6_PP6()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text7 PP7&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text7_PP7()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text8 PP8&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text8_PP8()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text9 PP9&amp#27;[0m    &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text9_PP9()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text10 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text10_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text11 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text11_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text12 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text12_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text13 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text13_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text14 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text14_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text15 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text15_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text16 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text16_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text17 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text17_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text18 PP0&amp#27;[0m   &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_check_the_text18_PP0()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and choose the plan to pay&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_to_pricing_page_and_choose_the_plan_to_pay()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected checkout page&amp#27;[0m                              &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_is_redirected_checkout_page()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser proceed to pay with paypal pp&amp#27;[0m                            &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_proceed_to_pay_with_paypal_pp()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mpaypal popup appears and user navigates back to my account pp&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.paypal_popup_appears_and_user_navigates_back_to_my_account_pp()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser Signout account PP&amp#27;[0m                                       &amp#27;[90m# SetupClass.StepDefinition.Paypal_Checkout.user_Signout_account_PP()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at SetupClass.StepDefinition.TakeImageStep.tearDown(TakeImageStep.java:20)
+&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Test Stripe checkout" classname="Stripe Checkout" time="228.625">
-    <error message="Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;ProductSummary-name Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500&apos;] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: bf237531b2d6672ca31ca6f3e65df37e" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='ProductSummary-name Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500'] (tried for 50 second(s) with 500 milliseconds interval)
+  <testcase name="Test paypal checkout" classname="Paypal Checkout" time="0.049">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SLIDEQA2', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf237531b2d6672ca31ca6f3e65df37e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+]]></error>
+  </testcase>
+  <testcase name="Test Stripe checkout" classname="Stripe Checkout" time="0.052">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
 ]]></error>
     <system-out><![CDATA[
 @Stripe_Checkout
 Scenario: Test Stripe checkout                                         &amp#27;[90m# src/test/java/Features/Stripe_Checkout.feature:3&amp#27;[0m
-wlpoyajakp
-selenium.testing.wlpoyajakp@gmail.com
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser is already on Website Home Page CO&amp#27;[0m                        &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_already_on_Website_Home_Page_CO()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text1 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text1_CO(int)&amp#27;[0m
-monthlyPrice  = $49.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text2 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text2_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text3 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text3_CO(int)&amp#27;[0m
-semiAnnual  = $149.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text4 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text4_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text5 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text5_CO(int)&amp#27;[0m
-Annual  = $249.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text6 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text6_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text7 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text7_CO(int)&amp#27;[0m
-annualCustom  = $299.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text8 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text8_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text9 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text9_CO(int)&amp#27;[0m
-Annual_4_User_License  = $599.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text10 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text10_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text11 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text11_CO(int)&amp#27;[0m
-Annual_20_User_License = $1,599.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text12 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text12_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text13 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text13_CO(int)&amp#27;[0m
-Annual_Company_Wide_Unlimited_User_License = $2,999.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text14 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text14_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text15 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text15_CO(int)&amp#27;[0m
-Annual_15_User_Education_License = $999.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text16 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text16_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text17 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text17_CO(int)&amp#27;[0m
-Annual_UNLIMITED_User_Institute_Wide_License = $1,999.99
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and check the text18 &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text18_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is redirected to pricing page and choose a plan to pay &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_choose_a_plan_to_pay_CO(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser proceed to pay with &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32mCO&amp#27;[0m                                &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_proceed_to_pay_with_CO_CO(int,int)&amp#27;[0m
-Title of the Page is --> SlideTeam Geeks Inc
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mCO page appears and user navigates back to my account &amp#27;[0m&amp#27;[31m&amp#27;[1m2&amp#27;[0m&amp#27;[31mCO&amp#27;[0m       &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.CO_page_appears_and_user_navigates_back_to_my_account_CO(int)&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='ProductSummary-name Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500'] (tried for 50 second(s) with 500 milliseconds interval)
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31muser is already on Website Home Page CO&amp#27;[0m                        &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_already_on_Website_Home_Page_CO()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SLIDEQA2', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf237531b2d6672ca31ca6f3e65df37e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at SetupClass.StepDefinition.Stripe_Checkout.CO_page_appears_and_user_navigates_back_to_my_account_CO(Stripe_Checkout.java:656)
-	at âœ½.CO page appears and user navigates back to my account 2CO(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Stripe_Checkout.feature:26)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at SetupClass.StepDefinition.Stripe_Checkout.user_is_already_on_Website_Home_Page_CO(Stripe_Checkout.java:26)
+	at âœ½.user is already on Website Home Page CO(file:///D:/Selenium%20Live%20Projects/SlideGeeks-Checkout/./src/test/java/Features/Stripe_Checkout.feature:5)
 &amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text1 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text1_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text2 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text2_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text3 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text3_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text4 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text4_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text5 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text5_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text6 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text6_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text7 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text7_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text8 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text8_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text9 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m      &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text9_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text10 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text10_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text11 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text11_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text12 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text12_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text13 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text13_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text14 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text14_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text15 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text15_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text16 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text16_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text17 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text17_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and check the text18 &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m     &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_check_the_text18_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is redirected to pricing page and choose a plan to pay &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_is_redirected_to_pricing_page_and_choose_a_plan_to_pay_CO(int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser proceed to pay with &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m                                &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_proceed_to_pay_with_CO_CO(int,int)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mCO page appears and user navigates back to my account &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m       &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.CO_page_appears_and_user_navigates_back_to_my_account_CO(int)&amp#27;[0m
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser signout the account &amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36mCO&amp#27;[0m                                    &amp#27;[90m# SetupClass.StepDefinition.Stripe_Checkout.user_signout_the_account_CO(int)&amp#27;[0m
-
-    Embedding screenshotName [image/png 62094 bytes]
-
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at SetupClass.StepDefinition.TakeImageStep.tearDown(TakeImageStep.java:20)
+&amp#27;[0m
 ]]></system-out>
+  </testcase>
+  <testcase name="Test Stripe checkout" classname="Stripe Checkout" time="0.052">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=108.0.5359.99)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2acab18a2e63cc35729c8f4fc3d619d" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2acab18a2e63cc35729c8f4fc3d619d
+]]></error>
   </testcase>
 </testsuite>
