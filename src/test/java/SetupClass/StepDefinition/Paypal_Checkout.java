@@ -636,7 +636,7 @@ public class Paypal_Checkout extends SetupClass {
 		Thread.sleep(4000);
 		// js.executeScript("window.scrollBy(0,1000)");
 		WebElement Subscribe_btn = driver.findElement(By.xpath(
-				"//div[@id='Business']//form[@name='hikashop_product_form_389635_hikashop_category_information_menu_117']//span[contains(text(),'Join now')]"));
+				"//div[@id='Business']//form[@name='hikashop_product_form_389637_hikashop_category_information_menu_117']//span[contains(text(),'Join now')]"));
 		js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
 		Thread.sleep(2000);
 		Subscribe_btn.click();
