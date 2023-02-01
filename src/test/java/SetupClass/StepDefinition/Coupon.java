@@ -32,8 +32,8 @@ public class Coupon extends SetupClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Pricing']")));
 		pricing.click();
 		Thread.sleep(2000);
-		WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("//div[@id = 'Individual']/div[1]/div[2]/div[3]/span[1]/form[1]/a[1]/span[1]")));
+		WebElement Join_now = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//div[@id='Individual']//form[@name='hikashop_product_form_205548_hikashop_category_information_menu_117']//span[contains(text(),'Join now')]")));
 
 		Join_now.click();
 		Thread.sleep(3000);
@@ -43,7 +43,7 @@ public class Coupon extends SetupClass {
 
 		signup.click();
 		Thread.sleep(3000);
-		driver.get("https://www.slidegeeks.com/register?checkout=1&74.44");
+		driver.get("https://www.slidegeeks.com/register?checkout=1&74.55");
 		Thread.sleep(3000);
 
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
@@ -139,7 +139,8 @@ public class Coupon extends SetupClass {
 	public void user_proceed_to_pay_with_paypal_pp_cc() throws Throwable {
 
 		try {
-			WebElement cp_btn = driver.findElement(By.xpath("//label[@for='payment_radio_1_2__stripe_2']"));
+			WebElement cp_btn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+					"//div[@class = 'form-group col-md-12 col-sm-12']//label[@for ='payment_radio_1_2__paypal_1']")));
 			Thread.sleep(2000);
 			cp_btn.click();
 			Thread.sleep(3000);
@@ -150,41 +151,47 @@ public class Coupon extends SetupClass {
 		// Apply coupon
 		js.executeScript("window.scrollBy(0,400)");
 		Thread.sleep(3000);
-		WebElement Coupon = driver.findElement(By.cssSelector("label[for='discount-checkbox']"));
+		WebElement Coupon = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='discount-checkbox']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].click();", Coupon);
 
-		WebElement Add_Coupon = driver.findElement(By.xpath("//input[@id='hikashop_checkout_coupon_input_1_3']"));
+		WebElement Add_Coupon = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='hikashop_checkout_coupon_input_1_3']")));
 		Thread.sleep(3000);
 		Add_Coupon.sendKeys("5OFF");
 		Thread.sleep(3000);
-		WebElement Apply_Coupon = driver.findElement(By.xpath("//button[normalize-space()='APPLY COUPON']"));
+		WebElement Apply_Coupon = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='APPLY COUPON']")));
 		Thread.sleep(3000);
 		Apply_Coupon.click();
 		Thread.sleep(3000);
 
 		System.out.println("copon applied");
 		// Remove Coupon
-		WebElement Remove_Coupon = driver.findElement(By.xpath("//button[@id='cancel_coupon']")); //
+		WebElement Remove_Coupon = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='cancel_coupon']"))); //
 		Thread.sleep(3000);
 		Remove_Coupon.click();
 		Thread.sleep(3000);
 
 		// Aplly Coupon Again // WebElement Coupon1= //
-		driver.findElement(By.cssSelector("label[for='discount-checkbox']")); //
+
 		Thread.sleep(3000); // Coupon1.click(); // Thread.sleep(3000);
-		WebElement Add_Coupon1 = driver.findElement(By.xpath("//input[@id='hikashop_checkout_coupon_input_1_3']"));
+		WebElement Add_Coupon1 = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='hikashop_checkout_coupon_input_1_3']")));
 		Thread.sleep(3000);
 		Add_Coupon1.sendKeys("5OFF");
 		Thread.sleep(3000); //
-		WebElement Apply_Coupon1 = driver.findElement(By.xpath("//button[normalize-space()='APPLY COUPON']"));
+		WebElement Apply_Coupon1 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='APPLY COUPON']")));
 		Thread.sleep(3000);
 		Apply_Coupon1.click();
 		Thread.sleep(3000);
 
-		WebElement Value_after_coupon = driver.findElement(By.cssSelector(".cart_price"));
+		WebElement Value_after_coupon = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".cart_price")));
 
-		String expected = "$47.49";
 		String actual = Value_after_coupon.getText();
 		System.out.println("after coupon applied price is = " + actual);
 
@@ -193,7 +200,8 @@ public class Coupon extends SetupClass {
 		Thread.sleep(1000);
 		try {
 
-			WebElement place_order_btn = driver.findElement(By.xpath("//button[@id='hikabtn_checkout_next']"));
+			WebElement place_order_btn = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='hikabtn_checkout_next']")));
 			Thread.sleep(2000);
 			js.executeScript("arguments[0].scrollIntoView();", place_order_btn);
 			// js.executeScript("arguments[0].click();", place_order_btn);
@@ -209,39 +217,43 @@ public class Coupon extends SetupClass {
 	public void paypal_popup_appears_and_user_navigates_back_to_my_account_pp_cc() throws Throwable {
 
 		// page title
-		String pp_page_title = driver.getTitle();
-		Thread.sleep(3000);
-		System.out.println("Title of the Page is --> " + pp_page_title);
+		Assert.assertTrue("user was not on the paypal page",
+				driver.getTitle().contains("Log in to your PayPal account"));
+		driver.navigate().back();
 
 	}
 
 	@Then("^user Signout account PP cc$")
 	public void user_Signout_account_PP_cc() throws Throwable {
 		Thread.sleep(3000);
-		driver.get("https://www.slidegeeks.com/checkout");
-		Thread.sleep(2000);
-		WebElement Account = driver.findElement(By.xpath("//a[normalize-space()='Account']//i"));
+		WebElement Account = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Account']")));
 		Thread.sleep(3000);
 		Account.click();
 		Thread.sleep(3000);
-		WebElement Delete_Account = driver.findElement(By.xpath("//a[normalize-space()='Delete Account']"));
+		WebElement Delete_Account = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Delete Account']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", Delete_Account);
 		Thread.sleep(3000);
 		Delete_Account.click();
 		Thread.sleep(3000);
-		WebElement Delete_Account_reason = driver.findElement(By.cssSelector("#only-free-download-product"));
+		WebElement Delete_Account_reason = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#only-free-download-product")));
 		Thread.sleep(3000);
 		Delete_Account_reason.click();
 		Thread.sleep(3000);
-		WebElement Delete_Profile = driver.findElement(By.xpath("//button[@id='delete_profile']"));
+		WebElement Delete_Profile = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id = 'delete_profile']")));
 		Thread.sleep(3000);
 		Delete_Profile.click();
 		Thread.sleep(3000);
-		WebElement No_Delete = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div[3]/button[2]"));
+		WebElement No_Delete = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//button[@class = 'btn btn-default button_2']")));
 		Thread.sleep(3000);
 		No_Delete.click();
-		Thread.sleep(30000);
+		Thread.sleep(7000);
+
 		String verifyDeleteAccountMessage = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
 				.getText();

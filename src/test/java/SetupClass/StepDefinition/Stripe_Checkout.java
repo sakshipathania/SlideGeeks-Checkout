@@ -34,7 +34,7 @@ public class Stripe_Checkout extends SetupClass {
 		login_signup_btn.click();
 
 		Thread.sleep(4000);
-		driver.get("https://www.slidegeeks.com/register?073=958");
+		driver.get("https://www.slidegeeks.com/register?073=234");
 		Thread.sleep(3000);
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		// Thread.sleep(3000);
@@ -597,8 +597,7 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();", individual);
 		individual.click();
-		WebElement Subscribe_btn = driver.findElement(By.xpath(
-				"//div[@id='Individual']//form[@name='hikashop_product_form_389632_hikashop_category_information_menu_117']//span[contains(text(),'Join now')]"));
+		WebElement Subscribe_btn = driver.findElement(By.xpath("//button[@id='defaultOpen']"));
 		js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
 		Thread.sleep(2000);
 		Subscribe_btn.click();
