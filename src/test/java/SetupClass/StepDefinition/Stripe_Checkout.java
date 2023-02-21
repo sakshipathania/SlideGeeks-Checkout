@@ -597,7 +597,9 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();", individual);
 		individual.click();
-		WebElement Subscribe_btn = driver.findElement(By.xpath("//button[@id='defaultOpen']"));
+		Thread.sleep(2000);
+		WebElement Subscribe_btn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//div[@id='Individual']//div[contains(@class,'table-inner clearfix')]//div[1]//div[3]//span[1]//form[1]//button[1]//span[1]")));
 		js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
 		Thread.sleep(2000);
 		Subscribe_btn.click();
@@ -620,8 +622,8 @@ public class Stripe_Checkout extends SetupClass {
 		try {
 			Thread.sleep(2000);
 			// select stripe option
-			WebElement cp_btn = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@for='payment_radio_1_2__stripe_2']")));
+			WebElement cp_btn = wait.until(
+					ExpectedConditions.elementToBeClickable(By.xpath("//label[@for='payment_radio_1_2__stripe_2']")));
 
 			Thread.sleep(2000);
 			// Thread.sleep(2000);
