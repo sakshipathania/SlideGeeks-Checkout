@@ -587,23 +587,19 @@ public class Stripe_Checkout extends SetupClass {
 
 	@Then("^user is redirected to pricing page and choose a plan to pay (\\d+)CO$")
 	public void user_is_redirected_to_pricing_page_and_choose_a_plan_to_pay_CO(int arg1) throws Throwable {
-		// choose a plan
-		// driver.get("https://www.slidegeeks.com/subscriptions");
-		// Thread.sleep(3000);
+		Thread.sleep(3000);
+		WebElement Business_Team = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//button[@onclick=\"if (!window.__cfRLUnblockHandlers) return false; pricingbutton(event, 'Business')\"]")));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].scrollIntoView();", Business_Team);
+		Business_Team.click();
+		Thread.sleep(4000);
 		// js.executeScript("window.scrollBy(0,1000)");
-
-		WebElement individual = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='defaultOpen']")));
-		Thread.sleep(2000);
-		js.executeScript("arguments[0].scrollIntoView();", individual);
-		individual.click();
-		Thread.sleep(2000);
-		WebElement Subscribe_btn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//div[@id='Individual']//div[contains(@class,'table-inner clearfix')]//div[1]//div[3]//span[1]//form[1]//button[1]//span[1]")));
+		WebElement Subscribe_btn = driver.findElement(By.xpath(
+				"//div[@class='col-box table-col item education_call control']//form[@name='hikashop_product_form_226197_hikashop_category_information_menu_117']//span[contains(text(),'Join now')]"));
 		js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
 		Thread.sleep(2000);
 		Subscribe_btn.click();
-		Thread.sleep(6000);
 
 	}
 
@@ -620,7 +616,7 @@ public class Stripe_Checkout extends SetupClass {
 	public void user_proceed_to_pay_with_CO_CO(int arg1, int arg2) throws InterruptedException {
 
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			// select stripe option
 			WebElement cp_btn = wait.until(
 					ExpectedConditions.elementToBeClickable(By.xpath("//label[@for='payment_radio_1_2__stripe_2']")));
