@@ -19,6 +19,7 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 
 	WebDriverWait wait = new WebDriverWait(driver, 50);
 	JavascriptExecutor js = (JavascriptExecutor) driver;
+	WebElement Coupon;
 
 	@Given("^user is already on Website Home Page ii$")
 	public void user_is_already_on_Website_Home_Page_ii() throws Throwable {
@@ -118,8 +119,7 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(3000);
 		js.executeScript("window.scrollBy(0,400)");
 		Thread.sleep(3000);
-		WebElement Coupon = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='discount-checkbox']")));
+		Coupon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@class='discount_custom']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].click();", Coupon);
 
@@ -142,7 +142,11 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Remove_Coupon.click();
 		Thread.sleep(3000);
 
-		// Aplly Coupon Again // WebElement Coupon1= //
+		// Aplly Coupon Again
+
+		Coupon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@class='discount_custom']")));
+		Thread.sleep(3000);
+		js.executeScript("arguments[0].click();", Coupon);
 
 		Thread.sleep(3000); // Coupon1.click(); // Thread.sleep(3000);
 		WebElement Add_Coupon1 = wait.until(

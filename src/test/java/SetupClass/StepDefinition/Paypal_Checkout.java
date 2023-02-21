@@ -675,7 +675,7 @@ public class Paypal_Checkout extends SetupClass {
 		js.executeScript("window.scrollBy(0,400)");
 		Thread.sleep(3000);
 
-		WebElement Coupon = driver.findElement(By.cssSelector("label[for='discount-checkbox']"));
+		WebElement Coupon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@class='discount_custom']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].click();", Coupon);
 

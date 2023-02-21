@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="169.955">
+    <testcase classname="Coupon" name="Coupon" time="169.437">
+        <system-out><![CDATA[Given user is already on Website Home Page cc...............................passed
+Then user is redirected to pricing page and choose the plan to pay cc.......passed
+Then user is redirected checkout page cc....................................passed
+Then user proceed to pay with paypal pp cc..................................passed
+Then paypal popup appears and user navigates back to my account pp cc.......passed
+Then user Signout account PP cc.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
