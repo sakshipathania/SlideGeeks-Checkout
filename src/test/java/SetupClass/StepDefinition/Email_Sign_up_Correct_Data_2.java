@@ -192,13 +192,11 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Thread.sleep(2000);
 		Stripe_back.click();
 
-		if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
-			Alert alert = driver.switchTo().alert();
-			System.out.println(alert.getText());
-			alert.accept();
-		} else {
-			System.out.println("Alert exists");
-		}
+		/*
+		 * if (wait.until(ExpectedConditions.alertIsPresent()) != null) { Alert alert =
+		 * driver.switchTo().alert(); System.out.println(alert.getText());
+		 * alert.accept(); } else { System.out.println("Alert exists"); }
+		 */
 
 		Thread.sleep(3000);
 
