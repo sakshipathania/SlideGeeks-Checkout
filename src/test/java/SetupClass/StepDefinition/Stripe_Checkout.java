@@ -34,7 +34,7 @@ public class Stripe_Checkout extends SetupClass {
 		login_signup_btn.click();
 
 		Thread.sleep(4000);
-		driver.get("https://www.slidegeeks.com/register?073=234");
+		driver.get("https://www.slidegeeks.com/register?0553=234");
 		Thread.sleep(3000);
 		WebElement name = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#register_name")));
 		// Thread.sleep(3000);
@@ -112,7 +112,7 @@ public class Stripe_Checkout extends SetupClass {
 		Thread.sleep(1000);
 		driver.switchTo().alert().accept();
 		// wait.implictywait(driver);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	@Then("^user is redirected to pricing page and check the text2 (\\d+)CO$")
@@ -601,7 +601,7 @@ public class Stripe_Checkout extends SetupClass {
 		js.executeScript("arguments[0].scrollIntoView();", Subscribe_btn);
 		Thread.sleep(2000);
 		Subscribe_btn.click();
-		// Thread.sleep(6000);
+		Thread.sleep(6000);
 
 	}
 
@@ -620,7 +620,8 @@ public class Stripe_Checkout extends SetupClass {
 		try {
 			Thread.sleep(2000);
 			// select stripe option
-			WebElement cp_btn = driver.findElement(By.xpath("//label[@for='payment_radio_1_2__stripe_2']"));
+			WebElement cp_btn = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@for='payment_radio_1_2__stripe_2']")));
 
 			Thread.sleep(2000);
 			// Thread.sleep(2000);
@@ -632,7 +633,8 @@ public class Stripe_Checkout extends SetupClass {
 		// place order button
 		try {
 
-			WebElement place_order_btn = driver.findElement(By.cssSelector("#hikabtn_checkout_next"));
+			WebElement place_order_btn = wait
+					.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#hikabtn_checkout_next")));
 			Thread.sleep(1000);
 			js.executeScript("arguments[0].scrollIntoView();", place_order_btn);
 			// js.executeScript("arguments[0].click();", place_order_btn);
