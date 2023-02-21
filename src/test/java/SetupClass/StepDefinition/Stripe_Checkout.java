@@ -661,7 +661,8 @@ public class Stripe_Checkout extends SetupClass {
 				.getText();
 		System.out.println("verify subscription text= " + verifyText1);
 
-		Assert.assertTrue("Your are not on paypal page", verifyText1.contentEquals("Subscribe to Semi Annual"));
+		Assert.assertTrue("Your are not on checkout details page", verifyText1
+				.contentEquals("Subscribe to Annual 4-User License (plus 15 Custom Designed slides worth $225)"));
 
 		// verify price
 		String verifyPrice = wait
@@ -669,7 +670,7 @@ public class Stripe_Checkout extends SetupClass {
 				.getText();
 		System.out.println("verifyPrice = " + verifyPrice);
 
-		Assert.assertTrue("Your are not on paypal page", verifyPrice.contentEquals("$149.99"));
+		Assert.assertTrue("Your are not on checkout page", verifyPrice.contentEquals("$599.99"));
 
 		WebElement Stripe_back1 = driver.findElement(By.cssSelector(
 				"#root > div > div > div.App-Overview > header > div > div > a > div > div > div.Header-backArrowContainer > svg"));
