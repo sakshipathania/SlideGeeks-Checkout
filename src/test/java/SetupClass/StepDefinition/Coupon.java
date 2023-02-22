@@ -173,9 +173,9 @@ public class Coupon extends SetupClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='cancel_coupon']"))); //
 		Thread.sleep(3000);
 		Remove_Coupon.click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
-		// Aplly Coupon Again
+		//Apply Coupon Again
 
 		Coupon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@class='discount_custom']")));
 		Thread.sleep(3000);
@@ -262,7 +262,7 @@ public class Coupon extends SetupClass {
 				ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
 				.getText();
 		System.out.println("verifyText1 = " + verifyDeleteAccountMessage);
-		Assert.assertTrue("Your are not on paypal page",
+		Assert.assertTrue("Your account is not deleted",
 				verifyDeleteAccountMessage.contentEquals("Your Account has been deleted successfully."));
 		Thread.sleep(3000);
 

@@ -675,7 +675,8 @@ public class Paypal_Checkout extends SetupClass {
 		js.executeScript("window.scrollBy(0,400)");
 		Thread.sleep(3000);
 
-		WebElement Coupon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@class='discount_custom']")));
+		WebElement Coupon = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@class='discount_custom']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].click();", Coupon);
 
@@ -805,7 +806,7 @@ public class Paypal_Checkout extends SetupClass {
 				ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='alert-message login-sucesmsg']")))
 				.getText();
 		System.out.println("verifyText1 = " + verifyDeleteAccountMessage);
-		Assert.assertTrue("Your are not on paypal page",
+		Assert.assertTrue("Your account is not deleted",
 				verifyDeleteAccountMessage.contentEquals("Your Account has been deleted successfully."));
 		Thread.sleep(3000);
 
