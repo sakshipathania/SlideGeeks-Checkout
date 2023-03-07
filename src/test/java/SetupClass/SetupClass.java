@@ -5,7 +5,6 @@ import java.util.Properties;
 import java.util.logging.Logger;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.PageLoadStrategy;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
