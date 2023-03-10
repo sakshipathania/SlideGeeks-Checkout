@@ -4,7 +4,6 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -134,13 +133,20 @@ public class Email_Sign_up_Correct_Data_2 extends SetupClass {
 		Apply_Coupon.click();
 		Thread.sleep(3000);
 
-		System.out.println("copon applied");
+		WebElement verify_Sucess_Message = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@class = 'coupon_applied_msg alert alert-message']"))); //
+		Thread.sleep(3000);
+		String sucess_Message = verify_Sucess_Message.getText();
+		System.out.println("sucess_Message= " + sucess_Message);
+		Assert.assertTrue("5off coupon is not applied successfully", sucess_Message.contains("You have successfully applied"));
+		Thread.sleep(3000);
+
 		// Remove Coupon
 		WebElement Remove_Coupon = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='cancel_coupon']"))); //
 		Thread.sleep(3000);
 		Remove_Coupon.click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 		// Aplly Coupon Again
 
